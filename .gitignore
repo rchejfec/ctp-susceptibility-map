@@ -15,13 +15,8 @@ node_modules/
 # Observable (legacy)
 src/.observablehq/
 
-# Data files (generated at build time)
-static/data/cd_metrics.csv
-static/data/cd_supplementary.csv
+# Data files (generated at build time, keep source CSVs)
 static/data/*.json
-# Keep source files
-!static/data/census_divisions.geojson
-!static/data/cd_metrics.TEMPLATE_EXAMPLE.csv
 
 # SvelteKit
 build/
