@@ -16,13 +16,12 @@ export const mapConfig = {
 	},
 
 	// ============================================================================
-	// DATA SOURCES
+	// DATA SOURCES (loaded in +page.server.js)
 	// ============================================================================
-	data: {
-		geometry: 'data/census_divisions.geojson',
-		metrics: 'data/cd_metrics.csv',
-		supplementary: 'data/cd_supplementary.csv' // NAICS sector details
-	},
+	// Note: Data is fetched server-side and passed via props
+	// - GeoJSON: /data/census_divisions.geojson
+	// - Metrics: /data/cd_metrics.json (built from CSV)
+	// - Supplementary: /data/cd_supplementary.json (built from CSV)
 
 	// ============================================================================
 	// FIELD MAPPING

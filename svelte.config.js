@@ -5,7 +5,8 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
 kit: {
 adapter: adapter({
-fallback: 'index.html'
+fallback: 'index.html',
+strict: false
 }),
 prerender: {
 crawl: true

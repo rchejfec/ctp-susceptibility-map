@@ -1,6 +1,7 @@
 import { a as store_get, h as head, u as unsubscribe_stores, e as ensure_array_like, c as attr_style, d as stringify, f as attr_class, g as attr, b as bind_props } from "./index.js";
 import { d as ssr_context, e as escape_html, g as getContext, a6 as setContext } from "./context.js";
 import { d as derived, w as writable } from "./index2.js";
+import "@sveltejs/kit/internal/server";
 import "clsx";
 import "maplibre-gl";
 import "d3";
@@ -19,14 +20,12 @@ const mapConfig = {
     description: "Census Division Trade/Tariff Impact Susceptibility"
   },
   // ============================================================================
-  // DATA SOURCES
+  // DATA SOURCES (loaded in +page.server.js)
   // ============================================================================
-  data: {
-    geometry: "data/census_divisions.geojson",
-    metrics: "data/cd_metrics.csv",
-    supplementary: "data/cd_supplementary.csv"
-    // NAICS sector details
-  },
+  // Note: Data is fetched server-side and passed via props
+  // - GeoJSON: /data/census_divisions.geojson
+  // - Metrics: /data/cd_metrics.json (built from CSV)
+  // - Supplementary: /data/cd_supplementary.json (built from CSV)
   // ============================================================================
   // FIELD MAPPING
   // ============================================================================
@@ -915,10 +914,10 @@ function MapView($$renderer, $$props) {
     if (store_get($$store_subs ??= {}, "$geoData", geoData) && store_get($$store_subs ??= {}, "$metricsData", metricsData)) {
       processData();
     }
-    head("njbu1f", $$renderer2, ($$renderer3) => {
+    head("1xlwktv", $$renderer2, ($$renderer3) => {
       $$renderer3.push(`<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.14.0/dist/maplibre-gl.css"/>`);
     });
-    $$renderer2.push(`<div class="map-container svelte-njbu1f"></div>`);
+    $$renderer2.push(`<div class="map-container svelte-1xlwktv"></div>`);
     if ($$store_subs) unsubscribe_stores($$store_subs);
   });
 }
@@ -951,11 +950,11 @@ function Legend($$renderer, $$props) {
     }
     legendItems = getLegendItems(store_get($$store_subs ??= {}, "$currentMetricConfig", currentMetricConfig));
     legendTitle = store_get($$store_subs ??= {}, "$currentMetricConfig", currentMetricConfig)?.label || "Legend";
-    $$renderer2.push(`<div class="legend svelte-1wfxrff"><h3 class="svelte-1wfxrff">${escape_html(legendTitle)}</h3> <div class="legend-items svelte-1wfxrff"><!--[-->`);
+    $$renderer2.push(`<div class="legend svelte-1fzzxrv"><h3 class="svelte-1fzzxrv">${escape_html(legendTitle)}</h3> <div class="legend-items svelte-1fzzxrv"><!--[-->`);
     const each_array = ensure_array_like(legendItems);
     for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
       let item = each_array[$$index];
-      $$renderer2.push(`<div class="legend-item svelte-1wfxrff"><div class="legend-color svelte-1wfxrff"${attr_style(`background-color: ${stringify(item.color)}`)}></div> <span class="svelte-1wfxrff">${escape_html(item.label)}</span></div>`);
+      $$renderer2.push(`<div class="legend-item svelte-1fzzxrv"><div class="legend-color svelte-1fzzxrv"${attr_style(`background-color: ${stringify(item.color)}`)}></div> <span class="svelte-1fzzxrv">${escape_html(item.label)}</span></div>`);
     }
     $$renderer2.push(`<!--]--></div></div>`);
     if ($$store_subs) unsubscribe_stores($$store_subs);
@@ -974,7 +973,7 @@ function ProvinceFilter($$renderer, $$props) {
         ...new Set(store_get($$store_subs ??= {}, "$metricsData", metricsData).map((d) => d.Province_Name).filter((p) => p != null && p !== "Unknown"))
       ].sort();
     }
-    $$renderer2.push(`<div class="filter svelte-1qrmnmq"><label for="province-filter" class="svelte-1qrmnmq">${escape_html(label)}</label> `);
+    $$renderer2.push(`<div class="filter svelte-h0tm5k"><label for="province-filter" class="svelte-h0tm5k">${escape_html(label)}</label> `);
     $$renderer2.select(
       {
         id: "province-filter",
@@ -1018,7 +1017,7 @@ function ProvinceFilter($$renderer, $$props) {
         }
         $$renderer3.push(`<!--]-->`);
       },
-      "svelte-1qrmnmq"
+      "svelte-h0tm5k"
     );
     $$renderer2.push(`</div>`);
     if ($$store_subs) unsubscribe_stores($$store_subs);
@@ -1046,35 +1045,35 @@ function DetailPanel($$renderer, $$props) {
       }
       return `${prefix}${value}${suffix}`;
     }
-    $$renderer2.push(`<div class="detail-panel svelte-ofd6sl"><div class="panel-header svelte-ofd6sl"><h3 class="svelte-ofd6sl">Region Details</h3> `);
+    $$renderer2.push(`<div class="detail-panel svelte-9u1aah"><div class="panel-header svelte-9u1aah"><h3 class="svelte-9u1aah">Region Details</h3> `);
     if (store_get($$store_subs ??= {}, "$selectedRegionData", selectedRegionData)) {
       $$renderer2.push("<!--[-->");
-      $$renderer2.push(`<button class="clear-btn svelte-ofd6sl" title="Clear selection">×</button>`);
+      $$renderer2.push(`<button class="clear-btn svelte-9u1aah" title="Clear selection">×</button>`);
     } else {
       $$renderer2.push("<!--[!-->");
     }
-    $$renderer2.push(`<!--]--></div> <div class="panel-content svelte-ofd6sl">`);
+    $$renderer2.push(`<!--]--></div> <div class="panel-content svelte-9u1aah">`);
     if (store_get($$store_subs ??= {}, "$selectedRegionData", selectedRegionData)) {
       $$renderer2.push("<!--[-->");
-      $$renderer2.push(`<div class="region-name svelte-ofd6sl">${escape_html(store_get($$store_subs ??= {}, "$selectedRegionData", selectedRegionData)[nameField])}</div> <!--[-->`);
+      $$renderer2.push(`<div class="region-name svelte-9u1aah">${escape_html(store_get($$store_subs ??= {}, "$selectedRegionData", selectedRegionData)[nameField])}</div> <!--[-->`);
       const each_array = ensure_array_like(panels);
       for (let $$index_3 = 0, $$length = each_array.length; $$index_3 < $$length; $$index_3++) {
         let panel = each_array[$$index_3];
-        $$renderer2.push(`<div class="panel-section svelte-ofd6sl">`);
+        $$renderer2.push(`<div class="panel-section svelte-9u1aah">`);
         if (panel.title) {
           $$renderer2.push("<!--[-->");
-          $$renderer2.push(`<h4 class="section-title svelte-ofd6sl">${escape_html(panel.title)}</h4>`);
+          $$renderer2.push(`<h4 class="section-title svelte-9u1aah">${escape_html(panel.title)}</h4>`);
         } else {
           $$renderer2.push("<!--[!-->");
         }
         $$renderer2.push(`<!--]--> `);
         if (panel.type === "fields") {
           $$renderer2.push("<!--[-->");
-          $$renderer2.push(`<div class="fields svelte-ofd6sl"><!--[-->`);
+          $$renderer2.push(`<div class="fields svelte-9u1aah"><!--[-->`);
           const each_array_1 = ensure_array_like(renderFieldsPanel(panel, store_get($$store_subs ??= {}, "$selectedRegionData", selectedRegionData)));
           for (let $$index = 0, $$length2 = each_array_1.length; $$index < $$length2; $$index++) {
             let field = each_array_1[$$index];
-            $$renderer2.push(`<div class="field-row svelte-ofd6sl"><span class="field-label svelte-ofd6sl">${escape_html(field.label)}:</span> <span class="field-value svelte-ofd6sl">${escape_html(field.value)}</span></div>`);
+            $$renderer2.push(`<div class="field-row svelte-9u1aah"><span class="field-label svelte-9u1aah">${escape_html(field.label)}:</span> <span class="field-value svelte-9u1aah">${escape_html(field.value)}</span></div>`);
           }
           $$renderer2.push(`<!--]--></div>`);
         } else {
@@ -1083,24 +1082,24 @@ function DetailPanel($$renderer, $$props) {
             $$renderer2.push("<!--[-->");
             if (store_get($$store_subs ??= {}, "$selectedRegionSupplementary", selectedRegionSupplementary) && store_get($$store_subs ??= {}, "$selectedRegionSupplementary", selectedRegionSupplementary).length > 0) {
               $$renderer2.push("<!--[-->");
-              $$renderer2.push(`<div class="custom-content svelte-ofd6sl">`);
+              $$renderer2.push(`<div class="custom-content svelte-9u1aah">`);
               if (panel.template === "list") {
                 $$renderer2.push("<!--[-->");
-                $$renderer2.push(`<ul class="supplementary-list svelte-ofd6sl"><!--[-->`);
+                $$renderer2.push(`<ul class="supplementary-list svelte-9u1aah"><!--[-->`);
                 const each_array_2 = ensure_array_like(store_get($$store_subs ??= {}, "$selectedRegionSupplementary", selectedRegionSupplementary));
                 for (let $$index_1 = 0, $$length2 = each_array_2.length; $$index_1 < $$length2; $$index_1++) {
                   let item = each_array_2[$$index_1];
-                  $$renderer2.push(`<li class="svelte-ofd6sl">`);
+                  $$renderer2.push(`<li class="svelte-9u1aah">`);
                   if (item.rank) {
                     $$renderer2.push("<!--[-->");
-                    $$renderer2.push(`<span class="rank svelte-ofd6sl">${escape_html(item.rank)}.</span>`);
+                    $$renderer2.push(`<span class="rank svelte-9u1aah">${escape_html(item.rank)}.</span>`);
                   } else {
                     $$renderer2.push("<!--[!-->");
                   }
-                  $$renderer2.push(`<!--]--> <span class="item-name svelte-ofd6sl">${escape_html(item.industry || item.name || item.label)}</span> `);
+                  $$renderer2.push(`<!--]--> <span class="item-name svelte-9u1aah">${escape_html(item.industry || item.name || item.label)}</span> `);
                   if (item.value) {
                     $$renderer2.push("<!--[-->");
-                    $$renderer2.push(`<span class="item-value svelte-ofd6sl">${escape_html(formatValue(item.value, {}))}</span>`);
+                    $$renderer2.push(`<span class="item-value svelte-9u1aah">${escape_html(formatValue(item.value, {}))}</span>`);
                   } else {
                     $$renderer2.push("<!--[!-->");
                   }
@@ -1111,21 +1110,21 @@ function DetailPanel($$renderer, $$props) {
                 $$renderer2.push("<!--[!-->");
                 if (panel.template === "table") {
                   $$renderer2.push("<!--[-->");
-                  $$renderer2.push(`<table class="supplementary-table svelte-ofd6sl"><tbody><!--[-->`);
+                  $$renderer2.push(`<table class="supplementary-table svelte-9u1aah"><tbody><!--[-->`);
                   const each_array_3 = ensure_array_like(store_get($$store_subs ??= {}, "$selectedRegionSupplementary", selectedRegionSupplementary));
                   for (let $$index_2 = 0, $$length2 = each_array_3.length; $$index_2 < $$length2; $$index_2++) {
                     let item = each_array_3[$$index_2];
-                    $$renderer2.push(`<tr class="svelte-ofd6sl">`);
+                    $$renderer2.push(`<tr class="svelte-9u1aah">`);
                     if (item.rank) {
                       $$renderer2.push("<!--[-->");
-                      $$renderer2.push(`<td class="rank-col svelte-ofd6sl">${escape_html(item.rank)}</td>`);
+                      $$renderer2.push(`<td class="rank-col svelte-9u1aah">${escape_html(item.rank)}</td>`);
                     } else {
                       $$renderer2.push("<!--[!-->");
                     }
-                    $$renderer2.push(`<!--]--><td class="name-col svelte-ofd6sl">${escape_html(item.industry || item.name || item.label)}</td>`);
+                    $$renderer2.push(`<!--]--><td class="name-col svelte-9u1aah">${escape_html(item.industry || item.name || item.label)}</td>`);
                     if (item.value) {
                       $$renderer2.push("<!--[-->");
-                      $$renderer2.push(`<td class="value-col svelte-ofd6sl">${escape_html(formatValue(item.value, {}))}</td>`);
+                      $$renderer2.push(`<td class="value-col svelte-9u1aah">${escape_html(formatValue(item.value, {}))}</td>`);
                     } else {
                       $$renderer2.push("<!--[!-->");
                     }
@@ -1140,7 +1139,7 @@ function DetailPanel($$renderer, $$props) {
               $$renderer2.push(`<!--]--></div>`);
             } else {
               $$renderer2.push("<!--[!-->");
-              $$renderer2.push(`<p class="no-data svelte-ofd6sl">No supplementary data available</p>`);
+              $$renderer2.push(`<p class="no-data svelte-9u1aah">No supplementary data available</p>`);
             }
             $$renderer2.push(`<!--]-->`);
           } else {
@@ -1153,7 +1152,7 @@ function DetailPanel($$renderer, $$props) {
       $$renderer2.push(`<!--]-->`);
     } else {
       $$renderer2.push("<!--[!-->");
-      $$renderer2.push(`<p class="placeholder svelte-ofd6sl">Click a region to view details</p>`);
+      $$renderer2.push(`<p class="placeholder svelte-9u1aah">Click a region to view details</p>`);
     }
     $$renderer2.push(`<!--]--></div></div>`);
     if ($$store_subs) unsubscribe_stores($$store_subs);
@@ -1237,30 +1236,30 @@ function DetailPanel2($$renderer, $$props) {
     metricCode = getMetricCode(store_get($$store_subs ??= {}, "$selectedMetric", selectedMetric));
     metricFilteredSupp = metricCode && store_get($$store_subs ??= {}, "$selectedRegionSupplementary", selectedRegionSupplementary) ? store_get($$store_subs ??= {}, "$selectedRegionSupplementary", selectedRegionSupplementary).filter((row) => row.Metric === metricCode) : [];
     displayData = metricFilteredSupp.slice(0, 10);
-    $$renderer2.push(`<div class="detail-panel svelte-s014jr"><div class="panel-header svelte-s014jr"><h3 class="svelte-s014jr">${escape_html(
+    $$renderer2.push(`<div class="detail-panel svelte-8slv8n"><div class="panel-header svelte-8slv8n"><h3 class="svelte-8slv8n">${escape_html(
       // Top 10 sectors
       panel?.title || "Sector Details"
-    )}</h3></div> <div class="panel-content svelte-s014jr">`);
+    )}</h3></div> <div class="panel-content svelte-8slv8n">`);
     if (!store_get($$store_subs ??= {}, "$selectedRegionData", selectedRegionData)) {
       $$renderer2.push("<!--[-->");
-      $$renderer2.push(`<p class="placeholder svelte-s014jr">Select a census division to view sector details</p>`);
+      $$renderer2.push(`<p class="placeholder svelte-8slv8n">Select a census division to view sector details</p>`);
     } else {
       $$renderer2.push("<!--[!-->");
       if (!metricCode) {
         $$renderer2.push("<!--[-->");
-        $$renderer2.push(`<p class="no-data svelte-s014jr">Sector details not available for Top Score metric</p>`);
+        $$renderer2.push(`<p class="no-data svelte-8slv8n">Sector details not available for Top Score metric</p>`);
       } else {
         $$renderer2.push("<!--[!-->");
         if (!metricFilteredSupp || metricFilteredSupp.length === 0) {
           $$renderer2.push("<!--[-->");
-          $$renderer2.push(`<p class="no-data svelte-s014jr">No sector data available for this metric</p>`);
+          $$renderer2.push(`<p class="no-data svelte-8slv8n">No sector data available for this metric</p>`);
         } else {
           $$renderer2.push("<!--[!-->");
-          $$renderer2.push(`<div class="region-name svelte-s014jr">${escape_html(store_get($$store_subs ??= {}, "$selectedRegionData", selectedRegionData)[nameField])}</div> <table class="supplementary-table svelte-s014jr"><thead class="svelte-s014jr"><tr><th class="rank-col svelte-s014jr">Rank</th><th class="naics-col svelte-s014jr">NAICS</th><th class="name-col svelte-s014jr">Sector</th><th class="share-col svelte-s014jr">Share</th></tr></thead><tbody class="svelte-s014jr"><!--[-->`);
+          $$renderer2.push(`<div class="region-name svelte-8slv8n">${escape_html(store_get($$store_subs ??= {}, "$selectedRegionData", selectedRegionData)[nameField])}</div> <table class="supplementary-table svelte-8slv8n"><thead class="svelte-8slv8n"><tr><th class="rank-col svelte-8slv8n">Rank</th><th class="naics-col svelte-8slv8n">NAICS</th><th class="name-col svelte-8slv8n">Sector</th><th class="share-col svelte-8slv8n">Share</th></tr></thead><tbody class="svelte-8slv8n"><!--[-->`);
           const each_array = ensure_array_like(displayData);
           for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
             let item = each_array[$$index];
-            $$renderer2.push(`<tr class="svelte-s014jr"><td class="rank-col svelte-s014jr">${escape_html(item.Rank)}</td><td class="naics-col svelte-s014jr">${escape_html(item.NAICS || "N/A")}</td><td class="name-col svelte-s014jr">${escape_html(getSectorName(item.NAICS))}</td><td class="share-col svelte-s014jr">${escape_html(item.Share)}</td></tr>`);
+            $$renderer2.push(`<tr class="svelte-8slv8n"><td class="rank-col svelte-8slv8n">${escape_html(item.Rank)}</td><td class="naics-col svelte-8slv8n">${escape_html(item.NAICS || "N/A")}</td><td class="name-col svelte-8slv8n">${escape_html(getSectorName(item.NAICS))}</td><td class="share-col svelte-8slv8n">${escape_html(item.Share)}</td></tr>`);
           }
           $$renderer2.push(`<!--]--></tbody></table>`);
         }
@@ -1279,7 +1278,7 @@ function MetricSwitcher($$renderer, $$props) {
     const metrics = mapConfig.metrics || [];
     if (style === "dropdown") {
       $$renderer2.push("<!--[-->");
-      $$renderer2.push(`<div class="metric-switcher-dropdown svelte-19bccjh"><label for="metric-select" class="svelte-19bccjh">Metric:</label> `);
+      $$renderer2.push(`<div class="metric-switcher-dropdown svelte-1wtwk1"><label for="metric-select" class="svelte-1wtwk1">Metric:</label> `);
       $$renderer2.select(
         {
           id: "metric-select",
@@ -1297,18 +1296,18 @@ function MetricSwitcher($$renderer, $$props) {
           }
           $$renderer3.push(`<!--]-->`);
         },
-        "svelte-19bccjh"
+        "svelte-1wtwk1"
       );
       $$renderer2.push(`</div>`);
     } else {
       $$renderer2.push("<!--[!-->");
       if (style === "tabs") {
         $$renderer2.push("<!--[-->");
-        $$renderer2.push(`<div class="metric-switcher-tabs svelte-19bccjh"><!--[-->`);
+        $$renderer2.push(`<div class="metric-switcher-tabs svelte-1wtwk1"><!--[-->`);
         const each_array_1 = ensure_array_like(metrics);
         for (let $$index_1 = 0, $$length = each_array_1.length; $$index_1 < $$length; $$index_1++) {
           let metric = each_array_1[$$index_1];
-          $$renderer2.push(`<button${attr_class("tab svelte-19bccjh", void 0, {
+          $$renderer2.push(`<button${attr_class("tab svelte-1wtwk1", void 0, {
             "active": store_get($$store_subs ??= {}, "$selectedMetric", selectedMetric) === metric.id
           })}${attr("title", metric.description || metric.label)}>${escape_html(metric.label)}</button>`);
         }
@@ -1328,10 +1327,10 @@ function SearchBar($$renderer, $$props) {
     const config = mapConfig.features?.searchBar || {};
     const placeholder = config.placeholder || "Search regions...";
     mapConfig.fields?.geometry?.nameField || "Region_Name";
-    $$renderer2.push(`<div class="search-bar svelte-yyldap"><div class="search-input-wrapper svelte-yyldap"><svg class="search-icon svelte-yyldap" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg> <input type="text"${attr("placeholder", placeholder)}${attr("value", store_get($$store_subs ??= {}, "$searchQuery", searchQuery))} class="svelte-yyldap"/> `);
+    $$renderer2.push(`<div class="search-bar svelte-19j5rut"><div class="search-input-wrapper svelte-19j5rut"><svg class="search-icon svelte-19j5rut" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg> <input type="text"${attr("placeholder", placeholder)}${attr("value", store_get($$store_subs ??= {}, "$searchQuery", searchQuery))} class="svelte-19j5rut"/> `);
     if (store_get($$store_subs ??= {}, "$searchQuery", searchQuery)) {
       $$renderer2.push("<!--[-->");
-      $$renderer2.push(`<button class="clear-btn svelte-yyldap" title="Clear search">×</button>`);
+      $$renderer2.push(`<button class="clear-btn svelte-19j5rut" title="Clear search">×</button>`);
     } else {
       $$renderer2.push("<!--[!-->");
     }
@@ -1352,7 +1351,7 @@ function BarChart($$renderer, $$props) {
     var $$store_subs;
     const chartConfig = mapConfig.charts?.barChart || {};
     chartConfig.height || 300;
-    $$renderer2.push(`<div class="bar-chart-container svelte-9fnibp"><h3 class="chart-title svelte-9fnibp">${escape_html(
+    $$renderer2.push(`<div class="bar-chart-container svelte-bfv9dl"><h3 class="chart-title svelte-bfv9dl">${escape_html(
       /**
        * Map metric ID to score column name
        */
@@ -1397,7 +1396,7 @@ function BarChart($$renderer, $$props) {
       // Find which province contains this region
       // Highlight the bar for this province (red)
       store_get($$store_subs ??= {}, "$currentMetricConfig", currentMetricConfig)?.label || "Metric"
-    )} ${escape_html(chartConfig.title || "")}</h3> <div class="chart svelte-9fnibp"></div></div>`);
+    )} ${escape_html(chartConfig.title || "")}</h3> <div class="chart svelte-bfv9dl"></div></div>`);
     if ($$store_subs) unsubscribe_stores($$store_subs);
   });
 }
@@ -1405,7 +1404,7 @@ function ScatterPlot($$renderer, $$props) {
   $$renderer.component(($$renderer2) => {
     const chartConfig = mapConfig.charts?.scatterChart || {};
     chartConfig.height || 300;
-    $$renderer2.push(`<div class="scatter-plot-container svelte-1teu741"><h3 class="chart-title svelte-1teu741">${escape_html(
+    $$renderer2.push(`<div class="scatter-plot-container svelte-1u9tyqd"><h3 class="chart-title svelte-1u9tyqd">${escape_html(
       // Clear existing
       // Create SVG
       // Filter data with valid values
@@ -1420,7 +1419,7 @@ function ScatterPlot($$renderer, $$props) {
       // Selected point (distinct from highlight)
       // Cleanup tooltip on unmount
       chartConfig.title || "Scatter Plot"
-    )}</h3> <div class="chart svelte-1teu741"></div></div>`);
+    )}</h3> <div class="chart svelte-1u9tyqd"></div></div>`);
   });
 }
 function MapPage($$renderer, $$props) {
@@ -1448,33 +1447,41 @@ function MapPage($$renderer, $$props) {
     row2GridTemplate = getRow2GridTemplate(config);
     barChartEnabled = fullConfig.charts?.barChart?.enabled ?? false;
     scatterChartEnabled = fullConfig.charts?.scatterChart?.enabled ?? false;
-    head("18pooxh", $$renderer2, ($$renderer3) => {
+    head("wtltl5", $$renderer2, ($$renderer3) => {
       $$renderer3.title(($$renderer4) => {
         $$renderer4.push(`<title>${escape_html(config.project?.title || "Map Visualization")}</title>`);
       });
     });
-    $$renderer2.push(`<div class="container svelte-18pooxh"><header class="svelte-18pooxh"><h1 class="svelte-18pooxh">${escape_html(config.project?.title || "Map Visualization")}</h1> `);
+    $$renderer2.push(`<div class="container svelte-wtltl5"><header class="svelte-wtltl5"><h1 class="svelte-wtltl5">${escape_html(config.project?.title || "Map Visualization")}</h1> `);
     if (config.project?.subtitle) {
       $$renderer2.push("<!--[-->");
-      $$renderer2.push(`<p class="subtitle svelte-18pooxh">${escape_html(config.project.subtitle)}</p>`);
+      $$renderer2.push(`<p class="subtitle svelte-wtltl5">${escape_html(config.project.subtitle)}</p>`);
     } else {
+      $$renderer2.push("<!--[!-->");
+    }
+    $$renderer2.push(`<!--]--> `);
+    {
+      $$renderer2.push("<!--[!-->");
+    }
+    $$renderer2.push(`<!--]--> `);
+    {
       $$renderer2.push("<!--[!-->");
     }
     $$renderer2.push(`<!--]--></header> `);
     if (isTwoColumnMode) {
       $$renderer2.push("<!--[-->");
-      $$renderer2.push(`<div class="two-column-grid svelte-18pooxh"><div class="map-section svelte-18pooxh">`);
+      $$renderer2.push(`<div class="two-column-grid svelte-wtltl5"><div class="map-section svelte-wtltl5">`);
       MapView($$renderer2);
       $$renderer2.push(`<!----> `);
       if (legendEnabled) {
         $$renderer2.push("<!--[-->");
-        $$renderer2.push(`<div class="legend-overlay svelte-18pooxh">`);
+        $$renderer2.push(`<div class="legend-overlay svelte-wtltl5">`);
         Legend($$renderer2);
         $$renderer2.push(`<!----></div>`);
       } else {
         $$renderer2.push("<!--[!-->");
       }
-      $$renderer2.push(`<!--]--></div> <div class="right-column svelte-18pooxh"><div class="sidebar-section filters-card svelte-18pooxh"><h2 class="svelte-18pooxh">Controls</h2> <div class="filter-controls svelte-18pooxh">`);
+      $$renderer2.push(`<!--]--></div> <div class="right-column svelte-wtltl5"><div class="sidebar-section filters-card svelte-wtltl5"><h2 class="svelte-wtltl5">Controls</h2> <div class="filter-controls svelte-wtltl5">`);
       if (searchBarEnabled) {
         $$renderer2.push("<!--[-->");
         SearchBar($$renderer2);
@@ -1501,28 +1508,28 @@ function MapPage($$renderer, $$props) {
         let component = each_array[$$index];
         if (component.type === "infoCard" && infoCardEnabled) {
           $$renderer2.push("<!--[-->");
-          $$renderer2.push(`<div class="sidebar-section details-card svelte-18pooxh">`);
+          $$renderer2.push(`<div class="sidebar-section details-card svelte-wtltl5">`);
           DetailPanel($$renderer2);
           $$renderer2.push(`<!----></div>`);
         } else {
           $$renderer2.push("<!--[!-->");
           if (component.type === "infoCard2") {
             $$renderer2.push("<!--[-->");
-            $$renderer2.push(`<div class="sidebar-section details-card svelte-18pooxh">`);
+            $$renderer2.push(`<div class="sidebar-section details-card svelte-wtltl5">`);
             DetailPanel2($$renderer2);
             $$renderer2.push(`<!----></div>`);
           } else {
             $$renderer2.push("<!--[!-->");
             if (component.type === "barChart" && barChartEnabled) {
               $$renderer2.push("<!--[-->");
-              $$renderer2.push(`<div class="sidebar-section chart-card svelte-18pooxh">`);
+              $$renderer2.push(`<div class="sidebar-section chart-card svelte-wtltl5">`);
               BarChart($$renderer2);
               $$renderer2.push(`<!----></div>`);
             } else {
               $$renderer2.push("<!--[!-->");
               if (component.type === "scatterChart" && scatterChartEnabled) {
                 $$renderer2.push("<!--[-->");
-                $$renderer2.push(`<div class="sidebar-section chart-card svelte-18pooxh">`);
+                $$renderer2.push(`<div class="sidebar-section chart-card svelte-wtltl5">`);
                 ScatterPlot($$renderer2);
                 $$renderer2.push(`<!----></div>`);
               } else {
@@ -1539,18 +1546,18 @@ function MapPage($$renderer, $$props) {
       $$renderer2.push(`<!--]--></div></div>`);
     } else {
       $$renderer2.push("<!--[!-->");
-      $$renderer2.push(`<div class="main-grid svelte-18pooxh"><div class="map-section svelte-18pooxh">`);
+      $$renderer2.push(`<div class="main-grid svelte-wtltl5"><div class="map-section svelte-wtltl5">`);
       MapView($$renderer2);
       $$renderer2.push(`<!----> `);
       if (legendEnabled) {
         $$renderer2.push("<!--[-->");
-        $$renderer2.push(`<div class="legend-overlay svelte-18pooxh">`);
+        $$renderer2.push(`<div class="legend-overlay svelte-wtltl5">`);
         Legend($$renderer2);
         $$renderer2.push(`<!----></div>`);
       } else {
         $$renderer2.push("<!--[!-->");
       }
-      $$renderer2.push(`<!--]--></div> <div class="sidebar svelte-18pooxh"><div class="sidebar-section filters-card svelte-18pooxh"><h2 class="svelte-18pooxh">Controls</h2> <div class="filter-controls svelte-18pooxh">`);
+      $$renderer2.push(`<!--]--></div> <div class="sidebar svelte-wtltl5"><div class="sidebar-section filters-card svelte-wtltl5"><h2 class="svelte-wtltl5">Controls</h2> <div class="filter-controls svelte-wtltl5">`);
       if (searchBarEnabled) {
         $$renderer2.push("<!--[-->");
         SearchBar($$renderer2);
@@ -1574,7 +1581,7 @@ function MapPage($$renderer, $$props) {
       $$renderer2.push(`<!--]--></div></div> `);
       if (infoCardEnabled && infoCardInSidebar) {
         $$renderer2.push("<!--[-->");
-        $$renderer2.push(`<div class="sidebar-section details-card svelte-18pooxh">`);
+        $$renderer2.push(`<div class="sidebar-section details-card svelte-wtltl5">`);
         DetailPanel($$renderer2);
         $$renderer2.push(`<!----></div>`);
       } else {
@@ -1583,34 +1590,34 @@ function MapPage($$renderer, $$props) {
       $$renderer2.push(`<!--]--></div></div> `);
       if (showRow2) {
         $$renderer2.push("<!--[-->");
-        $$renderer2.push(`<div class="row2-section svelte-18pooxh"${attr_style(`grid-template-columns: ${stringify(row2GridTemplate)};`)}><!--[-->`);
+        $$renderer2.push(`<div class="row2-section svelte-wtltl5"${attr_style(`grid-template-columns: ${stringify(row2GridTemplate)};`)}><!--[-->`);
         const each_array_1 = ensure_array_like(row2Components);
         for (let $$index_1 = 0, $$length = each_array_1.length; $$index_1 < $$length; $$index_1++) {
           let component = each_array_1[$$index_1];
           if (component.type === "infoCard" && infoCardEnabled) {
             $$renderer2.push("<!--[-->");
-            $$renderer2.push(`<div class="row2-component info-card-wrapper svelte-18pooxh"${attr_style(`justify-self: ${stringify(component.align || "center")}; max-width: ${stringify(component.maxWidth || "100%")};`)}><div class="sidebar-section details-card svelte-18pooxh">`);
+            $$renderer2.push(`<div class="row2-component info-card-wrapper svelte-wtltl5"${attr_style(`justify-self: ${stringify(component.align || "center")}; max-width: ${stringify(component.maxWidth || "100%")};`)}><div class="sidebar-section details-card svelte-wtltl5">`);
             DetailPanel($$renderer2);
             $$renderer2.push(`<!----></div></div>`);
           } else {
             $$renderer2.push("<!--[!-->");
             if (component.type === "infoCard2") {
               $$renderer2.push("<!--[-->");
-              $$renderer2.push(`<div class="row2-component info-card-wrapper svelte-18pooxh" style="justify-self: start; max-width: 100%;"><div class="sidebar-section details-card svelte-18pooxh">`);
+              $$renderer2.push(`<div class="row2-component info-card-wrapper svelte-wtltl5" style="justify-self: start; max-width: 100%;"><div class="sidebar-section details-card svelte-wtltl5">`);
               DetailPanel2($$renderer2);
               $$renderer2.push(`<!----></div></div>`);
             } else {
               $$renderer2.push("<!--[!-->");
               if (component.type === "barChart" && barChartEnabled) {
                 $$renderer2.push("<!--[-->");
-                $$renderer2.push(`<div class="row2-component svelte-18pooxh"><div class="sidebar-section svelte-18pooxh">`);
+                $$renderer2.push(`<div class="row2-component svelte-wtltl5"><div class="sidebar-section svelte-wtltl5">`);
                 BarChart($$renderer2);
                 $$renderer2.push(`<!----></div></div>`);
               } else {
                 $$renderer2.push("<!--[!-->");
                 if (component.type === "scatterChart" && scatterChartEnabled) {
                   $$renderer2.push("<!--[-->");
-                  $$renderer2.push(`<div class="row2-component svelte-18pooxh"><div class="sidebar-section svelte-18pooxh">`);
+                  $$renderer2.push(`<div class="row2-component svelte-wtltl5"><div class="sidebar-section svelte-wtltl5">`);
                   ScatterPlot($$renderer2);
                   $$renderer2.push(`<!----></div></div>`);
                 } else {

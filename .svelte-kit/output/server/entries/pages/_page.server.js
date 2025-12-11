@@ -1,7 +1,5 @@
 async function load({ fetch }) {
   try {
-    const geoResponse = await fetch("/data/census_divisions.geojson");
-    const geoData = await geoResponse.json();
     const metricsResponse = await fetch("/data/cd_metrics.json");
     const metrics = await metricsResponse.json();
     let supplementary = null;
@@ -14,14 +12,15 @@ async function load({ fetch }) {
       console.log("No supplementary data file found (optional)");
     }
     return {
-      geoData,
+      // GeoJSON will be loaded client-side to avoid SSR bloat
+      geoDataUrl: "/data/census_divisions.geojson",
       metrics,
       supplementary
     };
   } catch (error) {
     console.error("Error loading data:", error);
     return {
-      geoData: null,
+      geoDataUrl: "/data/census_divisions.geojson",
       metrics: null,
       supplementary: null,
       error: error.message

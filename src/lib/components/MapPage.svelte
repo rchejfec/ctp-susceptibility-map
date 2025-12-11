@@ -6,6 +6,7 @@
 	 */
 	import { onMount, setContext } from 'svelte';
 	import { writable } from 'svelte/store';
+	import { base } from '$app/paths';
 	import { geoData, metricsData, supplementaryData } from '$lib/stores/mapStore.js';
 	import { provinceNames } from '$lib/mapConfig.js';
 	import {
@@ -44,20 +45,41 @@
 	// Provide config store to child components via context
 	setContext('mapConfig', configStore);
 
-	onMount(() => {
-		// Set data in stores
-		if (data.geoData && data.metrics) {
+	let isLoadingGeoData = false;
+	let geoDataError = null;
+
+	onMount(async () => {
+		// Set metrics data immediately
+		if (data?.metrics) {
 			// Add province names to metrics BEFORE setting in store
 			data.metrics.forEach((d) => {
 				d.Province_Name = provinceNames[String(d.Province)] || 'Unknown';
 			});
-
-			geoData.set(data.geoData);
 			metricsData.set(data.metrics);
 
 			// Load supplementary data if provided
 			if (data.supplementary) {
 				supplementaryData.set(data.supplementary);
+			}
+		}
+
+		// Load large GeoJSON client-side to avoid SSR bloat
+		if (data?.geoDataUrl) {
+			isLoadingGeoData = true;
+			try {
+				// Use base path for proper routing
+				const url = `${base}${data.geoDataUrl}`;
+				const response = await fetch(url);
+				if (!response.ok) {
+					throw new Error(`Failed to load GeoJSON: ${response.statusText}`);
+				}
+				const geojson = await response.json();
+				geoData.set(geojson);
+			} catch (error) {
+				console.error('Error loading GeoJSON:', error);
+				geoDataError = error.message;
+			} finally {
+				isLoadingGeoData = false;
 			}
 		}
 	});
@@ -95,6 +117,12 @@
 		<h1>{config.project?.title || 'Map Visualization'}</h1>
 		{#if config.project?.subtitle}
 			<p class="subtitle">{config.project.subtitle}</p>
+		{/if}
+		{#if isLoadingGeoData}
+			<p class="loading-indicator">Loading map data...</p>
+		{/if}
+		{#if geoDataError}
+			<p class="error-indicator">Error: {geoDataError}</p>
 		{/if}
 	</header>
 
@@ -263,6 +291,20 @@
 		margin: 0.25rem 0 0 0;
 		font-size: 0.875rem;
 		color: #666;
+	}
+
+	.loading-indicator {
+		margin: 0.5rem 0 0 0;
+		font-size: 0.875rem;
+		color: #4A90E2;
+		font-weight: 500;
+	}
+
+	.error-indicator {
+		margin: 0.5rem 0 0 0;
+		font-size: 0.875rem;
+		color: #d32f2f;
+		font-weight: 500;
 	}
 
 	/* ========================================

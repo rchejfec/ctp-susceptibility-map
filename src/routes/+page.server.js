@@ -2,15 +2,14 @@
  * Static data loader
  *
  * Loads pre-built data for the map application
- * Data is loaded client-side from static JSON files
+ * Data is loaded from static JSON files
+ *
+ * Note: GeoJSON is NOT loaded server-side to avoid bloating the initial HTML payload
+ * The 20MB geojson will be loaded client-side with streaming
  */
 
 export async function load({ fetch }) {
 	try {
-		// Fetch GeoJSON from static directory
-		const geoResponse = await fetch('/data/census_divisions.geojson');
-		const geoData = await geoResponse.json();
-
 		// Fetch CSV metrics converted to JSON at build time
 		const metricsResponse = await fetch('/data/cd_metrics.json');
 		const metrics = await metricsResponse.json();
@@ -27,14 +26,15 @@ export async function load({ fetch }) {
 		}
 
 		return {
-			geoData,
+			// GeoJSON will be loaded client-side to avoid SSR bloat
+			geoDataUrl: '/data/census_divisions.geojson',
 			metrics,
 			supplementary
 		};
 	} catch (error) {
 		console.error('Error loading data:', error);
 		return {
-			geoData: null,
+			geoDataUrl: '/data/census_divisions.geojson',
 			metrics: null,
 			supplementary: null,
 			error: error.message

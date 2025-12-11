@@ -94,7 +94,7 @@
 
 		$geoData.features.forEach((feature) => {
 			const uid = feature.properties[idField];
-			const metric = dataLookup.get(uid);
+			const metric = dataLookup.get(String(uid));
 			if (metric) {
 				feature.properties = { ...feature.properties, ...metric };
 			}
@@ -103,6 +103,13 @@
 		// Initialize map if not already done
 		if (!map && mapContainer) {
 			initMap();
+		} else if (map && map.getSource('census-divisions')) {
+			// Update existing map source with joined data
+			map.getSource('census-divisions').setData($geoData);
+			// Force color update after data refresh
+			if ($currentMetricConfig) {
+				updateMapColors($currentMetricConfig);
+			}
 		}
 	}
 

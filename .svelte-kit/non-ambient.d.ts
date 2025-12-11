@@ -27,17 +27,18 @@ export {};
 
 declare module "$app/types" {
 	export interface AppTypes {
-		RouteId(): "/" | "/two-column" | "/two-row";
+		RouteId(): "/" | "/embed" | "/two-column" | "/two-row";
 		RouteParams(): {
 			
 		};
 		LayoutParams(): {
 			"/": Record<string, never>;
+			"/embed": Record<string, never>;
 			"/two-column": Record<string, never>;
 			"/two-row": Record<string, never>
 		};
-		Pathname(): "/" | "/two-column" | "/two-column/" | "/two-row" | "/two-row/";
+		Pathname(): "/" | "/embed" | "/embed/" | "/two-column" | "/two-column/" | "/two-row" | "/two-row/";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
-		Asset(): "/data/cd_metrics.csv" | "/data/cd_metrics.json" | "/data/cd_metrics.TEMPLATE_EXAMPLE.csv" | "/data/cd_supplementary.csv" | "/data/cd_supplementary.json" | "/data/census_divisions.geojson" | string & {};
+		Asset(): "/.nojekyll" | "/data/cd_metrics.csv" | "/data/cd_metrics.json" | "/data/cd_metrics.TEMPLATE_EXAMPLE.csv" | "/data/cd_supplementary.csv" | "/data/cd_supplementary.json" | "/data/census_divisions.geojson" | string & {};
 	}
 }

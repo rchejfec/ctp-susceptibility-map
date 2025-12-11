@@ -2,6 +2,9 @@
 	"/": [
 		"src/routes/+page.server.js"
 	],
+	"/embed": [
+		"src/routes/embed/+page.server.js"
+	],
 	"/two-column": [
 		"src/routes/two-column/+page.server.js"
 	],

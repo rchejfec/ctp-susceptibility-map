@@ -18,7 +18,7 @@
       "_index2.js"
     ],
     "css": [
-      "_app/immutable/assets/MapPage.ug031oV6.css"
+      "_app/immutable/assets/MapPage.BigORHF7.css"
     ]
   },
   "_context.js": {
@@ -128,7 +128,7 @@
       "_index.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout.FMB52iO1.css"
+      "_app/immutable/assets/_layout.2WE2WmDy.css"
     ]
   },
   "src/routes/+page.server.js": {
@@ -145,6 +145,40 @@
     "imports": [
       "_index.js",
       "_MapPage.js"
+    ]
+  },
+  "src/routes/embed/+layout.svelte": {
+    "file": "entries/pages/embed/_layout.svelte.js",
+    "name": "entries/pages/embed/_layout.svelte",
+    "src": "src/routes/embed/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.pIi-rZWN.css"
+    ]
+  },
+  "src/routes/embed/+page.server.js": {
+    "file": "entries/pages/embed/_page.server.js",
+    "name": "entries/pages/embed/_page.server",
+    "src": "src/routes/embed/+page.server.js",
+    "isEntry": true,
+    "imports": [
+      "src/routes/+page.server.js"
+    ]
+  },
+  "src/routes/embed/+page.svelte": {
+    "file": "entries/pages/embed/_page.svelte.js",
+    "name": "entries/pages/embed/_page.svelte",
+    "src": "src/routes/embed/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js",
+      "_MapPage.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.C0qjZuXz.css"
     ]
   },
   "src/routes/two-column/+page.server.js": {

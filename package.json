@@ -4,8 +4,10 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
+		"prepare:data": "uv run python scripts/prepare_cd_metrics.py && uv run python scripts/prepare_cd_supplementary.py",
 		"build:data": "node scripts/csv-to-json.js",
-		"build": "npm run build:data && vite build",
+		"build": "npm run build:data && vite build && npm run build:nojekyll",
+		"build:nojekyll": "echo \"\" > build/.nojekyll",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"

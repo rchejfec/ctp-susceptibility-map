@@ -33,19 +33,28 @@ function castValue(value) {
 function convertCsvToJson(csvPath, jsonPath) {
   try {
     console.log(`Converting ${csvPath} → ${jsonPath}`);
-    
+
     // Read and parse CSV
-    const csvContent = readFileSync(csvPath, 'utf-8');
+    let csvContent = readFileSync(csvPath, 'utf-8');
+
+    // Remove BOM if present
+    if (csvContent.charCodeAt(0) === 0xFEFF) {
+      csvContent = csvContent.slice(1);
+    }
+
     const records = parse(csvContent, {
       columns: true,
       skip_empty_lines: true,
       cast: (value) => castValue(value)
     });
-    
+
+    // Note: Column normalization is handled by prepare_cd_metrics.py and prepare_cd_supplementary.py
+    // The CSV files are already preprocessed with correct column names
+
     // Write as JSON
     writeFileSync(jsonPath, JSON.stringify(records, null, 2));
     console.log(`✓ Converted ${records.length} records`);
-    
+
     return true;
   } catch (error) {
     console.error(`✗ Error converting ${csvPath}:`, error.message);
