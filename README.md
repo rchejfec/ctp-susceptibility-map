@@ -1,4 +1,4 @@
-# Community Transition Pathways - Susceptibility Map
+# Community Transition Pathways - Susceptibility Map 
 
 **Project:** Census Division susceptibility mapping for trade/tariff impacts
 **Data:** CTP Community Susceptibility Scores
