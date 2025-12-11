@@ -15,10 +15,9 @@ node_modules/
 # Observable (legacy)
 src/.observablehq/
 
-# SvelteKit
-build/
-.svelte-kit/
-.output/
+# Data files
+static/data/*.csv
+static/data/*.json
 
 # OS generated files
 .DS_Store

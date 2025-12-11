@@ -1,0 +1,11 @@
+{
+	"/": [
+		"src/routes/+page.server.js"
+	],
+	"/two-column": [
+		"src/routes/two-column/+page.server.js"
+	],
+	"/two-row": [
+		"src/routes/two-row/+page.server.js"
+	]
+}
