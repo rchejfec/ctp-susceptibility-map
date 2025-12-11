@@ -3,13 +3,18 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {
-		adapter: adapter({
-			fallback: 'index.html'  // For SPA routing
-		}),
-		prerender: {
-			crawl: true
-		},
-		paths: {
-			base: '/ctp-susceptibility-map'		}
-	},
+kit: {
+adapter: adapter({
+fallback: 'index.html'
+}),
+prerender: {
+crawl: true
+},
+paths: {
+base: '/ctp-susceptibility-map'
+}
+},
+preprocess: vitePreprocess()
+};
+
+export default config;
