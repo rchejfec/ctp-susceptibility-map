@@ -1,0 +1,1448 @@
+diff -ruN /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/components/BarChart.svelte /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/components/BarChart.svelte
+--- /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/components/BarChart.svelte	2025-12-10 15:29:54.661266400 -0500
++++ /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/components/BarChart.svelte	2025-12-11 09:49:08.480806100 -0500
+@@ -41,11 +41,92 @@
+ 		clearSelectionHighlight();
+ 	}
+ 
++	/**
++	 * Map metric ID to score column name
++	 */
++	function getScoreField(metricId) {
++		const mapping = {
++			import_susceptibility: 'IS',
++			manufacturing_susceptibility: 'MS',
++			fossil_fuel_susceptibility: 'FS',
++			top_score: 'Top_Score'
++		};
++		return mapping[metricId] || 'Top_Score';
++	}
++
++	/**
++	 * Aggregate data with share calculation by category (for stacked bars)
++	 */
++	function aggregateDataStacked(data, config) {
++		const groupBy = chartConfig.groupBy;
++		const aggColumn = chartConfig.aggregateColumn;
++		const scoreField = getScoreField(config.id);
++
++		// Group by province to calculate total PT labour force
++		const provinceGroups = d3.group(data, (d) => d[groupBy]);
++		const aggregated = [];
++
++		provinceGroups.forEach((provinceData, provinceName) => {
++			// Total labour force in this province
++			const totalLabourForce = d3.sum(
++				provinceData.map((d) => d[aggColumn]).filter((v) => v != null && !isNaN(v))
++			);
++
++			const categoryData = [];
++			let totalShare = 0;
++
++			// For each category (3, 4, 5), calculate share
++			[3, 4, 5].forEach((category) => {
++				// Filter CDs with this exact score
++				const categoryRows = provinceData.filter((d) => d[scoreField] === category);
++
++				// Sum labour force for this category
++				const categoryLabourForce = d3.sum(
++					categoryRows.map((d) => d[aggColumn]).filter((v) => v != null && !isNaN(v))
++				);
++
++				// Calculate share: category labour force / total PT labour force
++				const share = totalLabourForce > 0 ? categoryLabourForce / totalLabourForce : 0;
++
++				categoryData.push({
++					category: category,
++					value: share, // Percentage (0-1 scale)
++					count: categoryRows.length,
++					absoluteValue: categoryLabourForce,
++					items: categoryRows
++				});
++
++				totalShare += share;
++			});
++
++			aggregated.push({
++				group: provinceName,
++				value: totalShare, // Total share for sorting
++				categoryData: categoryData,
++				items: provinceData // All items for highlighting
++			});
++		});
++
++		// Sort by total share
++		if (chartConfig.sort === 'descending') {
++			aggregated.sort((a, b) => b.value - a.value);
++		} else if (chartConfig.sort === 'ascending') {
++			aggregated.sort((a, b) => a.value - b.value);
++		}
++
++		return aggregated;
++	}
++
+ 	function aggregateData(data, config) {
+ 		const groupBy = chartConfig.groupBy;
+ 		const aggColumn = config.column;
+ 		const aggFunction = chartConfig.aggregateFunction || 'sum';
+ 
++		// Check if we should use stacked aggregation
++		if (aggFunction === 'share_by_category' && chartConfig.stacked) {
++			return aggregateDataStacked(data, config);
++		}
++
+ 		const grouped = d3.group(data, (d) => d[groupBy]);
+ 		const aggregated = [];
+ 
+@@ -102,6 +183,8 @@
+ 
+ 		// Aggregate data
+ 		const aggregated = aggregateData(data, metricConfig);
++		const isStacked =
++			chartConfig.stacked && chartConfig.aggregateFunction === 'share_by_category';
+ 
+ 		// Scales
+ 		const x = d3
+@@ -124,7 +207,18 @@
+ 
+ 		svg.append('g').attr('class', 'y-axis').call(yAxis);
+ 
+-		// Bars
++		// Render bars (stacked or simple)
++		if (isStacked) {
++			renderStackedBars(svg, aggregated, x, y);
++		} else {
++			renderSimpleBars(svg, aggregated, x, y);
++		}
++	}
++
++	/**
++	 * Render simple (non-stacked) bars
++	 */
++	function renderSimpleBars(svg, aggregated, x, y) {
+ 		const bars = svg
+ 			.selectAll('.bar')
+ 			.data(aggregated)
+@@ -156,6 +250,52 @@
+ 			.text((d) => d3.format(chartConfig.xFormat || '~s')(d.value));
+ 	}
+ 
++	/**
++	 * Render stacked bars by category
++	 */
++	function renderStackedBars(svg, aggregated, x, y) {
++		aggregated.forEach((d) => {
++			let xOffset = 0;
++
++			d.categoryData.forEach((catData) => {
++				if (catData.value > 0) {
++					const segmentWidth = x(catData.value);
++
++					svg
++						.append('rect')
++						.attr('class', 'bar-segment')
++						.attr('data-group', d.group)
++						.attr('data-category', catData.category)
++						.attr('y', y(d.group))
++						.attr('height', y.bandwidth())
++						.attr('x', xOffset)
++						.attr('width', segmentWidth)
++						.attr('fill', chartConfig.colors[catData.category] || '#999')
++						.on('mouseover', function (event) {
++							handleStackedMouseOver(event, d, catData);
++						})
++						.on('mouseout', handleMouseOut);
++
++					xOffset += segmentWidth;
++				}
++			});
++		});
++	}
++
++	/**
++	 * Handle mouseover for stacked bar segments
++	 */
++	function handleStackedMouseOver(event, provinceData, categoryData) {
++		if (!chartConfig.linkedHighlight) return;
++
++		const idField = mapConfig.fields?.metrics?.idField || 'GeoUID';
++		const regionIds = categoryData.items.map((item) => item[idField]);
++		highlightRegions(regionIds);
++
++		// Highlight segment
++		d3.select(event.currentTarget).attr('opacity', 0.8);
++	}
++
+ 	function handleMouseOver(event, d) {
+ 		if (!chartConfig.linkedHighlight) return;
+ 
+diff -ruN /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/components/DetailPanel.svelte /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/components/DetailPanel.svelte
+--- /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/components/DetailPanel.svelte	2025-12-10 15:28:57.664149900 -0500
++++ /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/components/DetailPanel.svelte	2025-12-11 11:03:37.269319000 -0500
+@@ -14,7 +14,9 @@
+ 	 * Supports multiple panel sections from config
+ 	 */
+ 
+-	const panels = mapConfig.detailPanels || [];
++	// Only show the first panel (basic info card for sidebar)
++	// DetailPanel2 handles the second panel (NAICS table in Row 2)
++	const panels = mapConfig.detailPanels ? [mapConfig.detailPanels[0]] : [];
+ 	const nameField = mapConfig.fields?.geometry?.nameField || 'Region_Name';
+ 
+ 	function clearSelection() {
+diff -ruN /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/components/DetailPanel2.svelte /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/components/DetailPanel2.svelte
+--- /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/components/DetailPanel2.svelte	2025-12-10 01:11:22.967846200 -0500
++++ /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/components/DetailPanel2.svelte	2025-12-11 09:45:16.482260200 -0500
+@@ -1,74 +1,145 @@
+ <script>
+ 	/**
+-	 * Second Detail Panel Component
++	 * Second Detail Panel Component - NAICS Sector Details Table
+ 	 *
+-	 * Displays selected region information (alternate panel for multi-display layouts)
++	 * Displays sector/NAICS information for selected region, filtered by current metric
+ 	 */
+-	import { selectedRegionData, selectedRegion } from '$lib/stores/mapStore.js';
++	import {
++		selectedRegionData,
++		selectedRegion,
++		selectedRegionSupplementary,
++		selectedMetric
++	} from '$lib/stores/mapStore.js';
+ 	import { getContext } from 'svelte';
+ 
+-	// Get config from context (set by MapPage as a store)
++	// Get config from context
+ 	const configStore = getContext('mapConfig');
+ 
+ 	$: panel = $configStore?.detailPanels?.[1] || $configStore?.detailPanels?.[0];
+-	$: nameField = $configStore?.fields?.geometry?.nameField || 'Region_Name';
++	$: nameField = $configStore?.fields?.geometry?.nameField || 'CD_Name';
++
++	// NAICS code to sector name lookup
++	const NAICS_LOOKUP = {
++		'311': 'Food manufacturing',
++		'322': 'Paper manufacturing',
++		'324': 'Petroleum & coal products',
++		'325': 'Chemical manufacturing',
++		'327': 'Non-metallic mineral products',
++		'331': 'Primary metal manufacturing',
++		'336': 'Transportation equipment',
++		'481': 'Air transportation',
++		'483': 'Water transportation',
++		'484': 'Truck transportation',
++		'486': 'Pipeline transportation',
++		'493': 'Warehousing & storage',
++		'1125': 'Aquaculture',
++		'2111': 'Oil & gas extraction',
++		'2121': 'Coal mining',
++		'2122': 'Metal ore mining',
++		'2123': 'Non-metallic mineral mining',
++		'2131': 'Support activities for mining',
++		'2211': 'Electric power generation',
++		'2212': 'Natural gas distribution',
++		'3221': 'Pulp, paper & paperboard mills',
++		'3241': 'Petroleum & coal products',
++		'3313': 'Alumina & aluminum production',
++		'3314': 'Non-ferrous metal production',
++		'3315': 'Foundries',
++		// Additional codes from data
++		'113': 'Forestry',
++		'1114': 'Greenhouse/nursery',
++		'321': 'Wood products',
++		'3211': 'Sawmills',
++		'3212': 'Plywood',
++		'3219': 'Other wood',
++		'326': 'Plastics & rubber',
++		'3261': 'Plastics',
++		'3262': 'Rubber',
++		'332': 'Fabricated metal',
++		'3321': 'Forging/stamping',
++		'333': 'Machinery',
++		'3344': 'HVAC',
++		'3361': 'Motor vehicles',
++		'3363': 'Motor vehicle parts',
++		'3364': 'Aerospace',
++		'3399': 'Other manufacturing',
++		'485': 'Transit',
++		'4861': 'Pipeline (oil)',
++		'4862': 'Pipeline (gas)',
++		'562': 'Waste management',
++		'5622': 'Waste treatment',
++		'5629': 'Remediation',
++		'6113': 'Universities',
++		'6221': 'Hospitals',
++		'9111': 'Defence',
++		'9119': 'Other public admin'
++	};
+ 
+ 	/**
+-	 * Render fields for the panel
++	 * Get sector name for NAICS code
+ 	 */
+-	function renderFieldsPanel(panel, data) {
+-		if (!data || !panel.fields) return [];
+-
+-		return panel.fields.map((field) => {
+-			const value = data[field.key];
+-			const formatted = panel.format ? panel.format(value, field) : formatValue(value, field);
+-			return {
+-				label: field.label,
+-				value: formatted
+-			};
+-		});
++	function getSectorName(naicsCode) {
++		if (!naicsCode) return '';
++		return NAICS_LOOKUP[naicsCode] || `NAICS ${naicsCode}`;
+ 	}
+ 
+ 	/**
+-	 * Default format function
++	 * Map metric ID to data Metric code
+ 	 */
+-	function formatValue(value, field) {
+-		if (value == null || value === '') return 'N/A';
+-
+-		const prefix = field.prefix || '';
+-		const suffix = field.suffix || '';
+-
+-		if (typeof value === 'number') {
+-			return `${prefix}${value.toLocaleString()}${suffix}`;
+-		}
+-
+-		return `${prefix}${value}${suffix}`;
+-	}
++	function getMetricCode(metricId) {
++		const mapping = {
++			import_susceptibility: 'IS',
++			manufacturing_susceptibility: 'MS',
++			fossil_fuel_susceptibility: 'FS',
++			top_score: null // Don't show for Top Score
++		};
++		return mapping[metricId];
++	}
++
++	// Filter supplementary data by current metric
++	$: metricCode = getMetricCode($selectedMetric);
++	$: metricFilteredSupp =
++		metricCode && $selectedRegionSupplementary
++			? $selectedRegionSupplementary.filter((row) => row.Metric === metricCode)
++			: [];
++	$: displayData = metricFilteredSupp.slice(0, 10); // Top 10 sectors
+ </script>
+ 
+ <div class="detail-panel">
+ 	<div class="panel-header">
+-		<h3>{panel?.title || 'Economic Indicators'}</h3>
++		<h3>{panel?.title || 'Sector Details'}</h3>
+ 	</div>
+ 
+ 	<div class="panel-content">
+-		{#if $selectedRegionData}
+-			<!-- Region name header -->
++		{#if !$selectedRegionData}
++			<p class="placeholder">Select a census division to view sector details</p>
++		{:else if !metricCode}
++			<p class="no-data">Sector details not available for Top Score metric</p>
++		{:else if !metricFilteredSupp || metricFilteredSupp.length === 0}
++			<p class="no-data">No sector data available for this metric</p>
++		{:else}
+ 			<div class="region-name">{$selectedRegionData[nameField]}</div>
+ 
+-			<!-- Fields display -->
+-			{#if panel}
+-				<div class="fields">
+-					{#each renderFieldsPanel(panel, $selectedRegionData) as field}
+-						<div class="field-row">
+-							<span class="field-label">{field.label}:</span>
+-							<span class="field-value">{field.value}</span>
+-						</div>
++			<table class="supplementary-table">
++				<thead>
++					<tr>
++						<th class="rank-col">Rank</th>
++						<th class="naics-col">NAICS</th>
++						<th class="name-col">Sector</th>
++						<th class="share-col">Share</th>
++					</tr>
++				</thead>
++				<tbody>
++					{#each displayData as item}
++						<tr>
++							<td class="rank-col">{item.Rank}</td>
++							<td class="naics-col">{item.NAICS || 'N/A'}</td>
++							<td class="name-col">{getSectorName(item.NAICS)}</td>
++							<td class="share-col">{item.Share}</td>
++						</tr>
+ 					{/each}
+-				</div>
+-			{/if}
+-		{:else}
+-			<p class="placeholder">Click a region to view details</p>
++				</tbody>
++			</table>
+ 		{/if}
+ 	</div>
+ </div>
+@@ -78,15 +149,14 @@
+ 		display: flex;
+ 		flex-direction: column;
+ 		height: 100%;
+-		/* No background - parent provides it */
+ 	}
+ 
+ 	.panel-header {
+ 		display: flex;
+ 		justify-content: space-between;
+ 		align-items: center;
+-		padding: 0 0 0.75rem 0; /* Match other card headers */
+-		border-bottom: 1px solid #eee; /* Match other card headers */
++		padding: 0 0 0.75rem 0;
++		border-bottom: 1px solid #eee;
+ 		margin-bottom: 0.75rem;
+ 		flex-shrink: 0;
+ 	}
+@@ -100,7 +170,7 @@
+ 
+ 	.panel-content {
+ 		flex: 1;
+-		padding: 0; /* No padding - matches chart containers */
++		padding: 0;
+ 		overflow-y: auto;
+ 		font-size: 0.875rem;
+ 	}
+@@ -108,41 +178,64 @@
+ 	.region-name {
+ 		font-size: 1rem;
+ 		font-weight: 600;
+-		margin-bottom: 1.5rem;
++		margin-bottom: 1rem;
+ 		color: #333;
+ 		padding-bottom: 0.75rem;
+ 		border-bottom: 1px solid #e0e0e0;
+ 	}
+ 
+-	.fields {
+-		display: flex;
+-		flex-direction: column;
+-		gap: 0.5rem;
++	.supplementary-table {
++		width: 100%;
++		border-collapse: collapse;
++		font-size: 0.875rem;
+ 	}
+ 
+-	.field-row {
+-		display: flex;
+-		justify-content: space-between;
++	.supplementary-table thead {
++		background-color: #f5f5f5;
++		position: sticky;
++		top: 0;
++		z-index: 1;
++	}
++
++	.supplementary-table th {
++		padding: 0.5rem;
++		text-align: left;
++		font-weight: 600;
++		color: #555;
++		border-bottom: 2px solid #ddd;
++	}
++
++	.supplementary-table td {
+ 		padding: 0.5rem;
++		border-bottom: 1px solid #eee;
++	}
++
++	.supplementary-table tbody tr:hover {
+ 		background-color: #f9f9f9;
+-		border-radius: 4px;
+-		gap: 1rem;
+ 	}
+ 
+-	.field-label {
+-		color: #666;
+-		font-weight: 500;
+-		font-size: 0.8rem;
++	.rank-col {
++		width: 50px;
++		text-align: center;
+ 	}
+ 
+-	.field-value {
+-		color: #333;
+-		font-weight: 400;
++	.naics-col {
++		width: 70px;
++		font-family: monospace;
++	}
++
++	.name-col {
++		flex: 1;
++	}
++
++	.share-col {
++		width: 70px;
+ 		text-align: right;
+-		font-size: 0.8rem;
++		font-weight: 500;
+ 	}
+ 
+-	.placeholder {
++	.placeholder,
++	.no-data {
+ 		color: #999;
+ 		font-style: italic;
+ 		margin: 0;
+@@ -150,4 +243,8 @@
+ 		padding: 2rem 1rem;
+ 		font-size: 0.875rem;
+ 	}
++
++	.no-data {
++		color: #666;
++	}
+ </style>
+diff -ruN /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/components/Legend.svelte /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/components/Legend.svelte
+--- /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/components/Legend.svelte	2025-12-09 20:34:25.687943400 -0500
++++ /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/components/Legend.svelte	2025-12-11 11:01:44.859215000 -0500
+@@ -30,15 +30,20 @@
+ 					return { label: item.label, color };
+ 				});
+ 		} else if (metricConfig.type === 'categorical') {
+-			// Categorical scale
++			// Categorical scale - show high to low
+ 			const categories = metricConfig.scale?.categories;
++			const colors = metricConfig.scale?.colors;
++			const labels = metricConfig.scale?.labels;
+ 
+-			if (!categories) return [];
++			if (!categories || !colors) return [];
+ 
+-			return Object.entries(categories).map(([category, color]) => ({
+-				label: category,
+-				color
+-			}));
++			// Reverse to show high values (5) first
++			return [...categories]
++				.reverse()
++				.map((category) => ({
++					label: labels?.[category] || String(category),
++					color: colors[category]
++				}));
+ 		}
+ 
+ 		return [];
+diff -ruN /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/components/MapView.svelte /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/components/MapView.svelte
+--- /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/components/MapView.svelte	2025-12-11 00:05:22.015431000 -0500
++++ /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/components/MapView.svelte	2025-12-11 10:58:05.902546800 -0500
+@@ -222,9 +222,10 @@
+ 			});
+ 			return expression;
+ 		} else if (metricConfig.type === 'categorical') {
+-			// Categorical scale
++			// Categorical scale - match category values to colors
+ 			const expression = ['match', ['get', metricConfig.column]];
+-			Object.entries(metricConfig.scale.categories).forEach(([category, color]) => {
++			metricConfig.scale.categories.forEach((category) => {
++				const color = metricConfig.scale.colors[category];
+ 				expression.push(category, color);
+ 			});
+ 			expression.push('#cccccc'); // Default color
+diff -ruN /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/components/ScatterPlot.svelte /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/components/ScatterPlot.svelte
+--- /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/components/ScatterPlot.svelte	2025-12-10 23:49:36.976281000 -0500
++++ /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/components/ScatterPlot.svelte	2025-12-11 09:44:01.897923800 -0500
+@@ -56,7 +56,8 @@
+ 
+ 		// Filter data with valid values
+ 		const xColumn = chartConfig.xColumn;
+-		const yColumn = chartConfig.yColumn;
++		// Use metric-specific scatterYColumn if available (for dynamic Y-axis)
++		const yColumn = metricConfig.scatterYColumn || chartConfig.yColumn;
+ 		const idField = mapConfig.fields?.metrics?.idField || 'GeoUID';
+ 		const nameField = mapConfig.fields?.geometry?.nameField || 'Region_Name';
+ 
+diff -ruN /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/mapConfig.js /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/mapConfig.js
+--- /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/mapConfig.js	2025-12-10 15:47:39.135627100 -0500
++++ /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/mapConfig.js	2025-12-11 11:17:15.819967600 -0500
+@@ -1,8 +1,8 @@
+ /**
+- * Map Configuration
++ * Map Configuration - CTP Susceptibility Map
+  *
+- * This configuration object controls all aspects of the map visualization.
+- * Modify this object to create different map projects without touching component code.
++ * Community Transition Pathways (CTP) - Trade/Tariff Impact Susceptibility
++ * Shows Import, Manufacturing, and Fossil Fuel susceptibility across Canadian census divisions
+  */
+ 
+ export const mapConfig = {
+@@ -10,183 +10,266 @@
+ 	// PROJECT METADATA
+ 	// ============================================================================
+ 	project: {
+-		title: 'Canada Base Map',
+-		subtitle: 'Interactive choropleth map of Canadian census data',
+-		description: 'Explore census divisions across Canada with population and economic indicators'
++		title: '', // Empty for iframe use
++		subtitle: '',
++		description: 'Census Division Trade/Tariff Impact Susceptibility'
+ 	},
+ 
+ 	// ============================================================================
+ 	// DATA SOURCES
+ 	// ============================================================================
+ 	data: {
+-		// GeoJSON file path (relative to static/)
+ 		geometry: 'data/census_divisions.geojson',
+-		// Primary metrics CSV file path
+ 		metrics: 'data/cd_metrics.csv',
+-		// Optional supplementary data (e.g., industry breakdowns)
+-		supplementary: null
++		supplementary: 'data/cd_supplementary.csv' // NAICS sector details
+ 	},
+ 
+ 	// ============================================================================
+ 	// FIELD MAPPING
+-	// Maps your data column names to what the framework expects
+ 	// ============================================================================
+ 	fields: {
+-		// Geometry data field names (in GeoJSON properties)
+ 		geometry: {
+-			idField: 'GeoUID', // Unique identifier for joining
+-			nameField: 'Region_Name', // Display name
+-			provinceField: 'Province' // Province code for filtering
++			idField: 'GeoUID',
++			nameField: 'CD_Name', // Changed from Region_Name
++			provinceField: 'Province'
+ 		},
+-
+-		// Metrics data field names (in CSV)
+ 		metrics: {
+-			idField: 'GeoUID', // Must match geometry idField values
+-			provinceField: 'Province' // Province code for filtering
++			idField: 'GeoUID',
++			provinceField: 'Province'
++		},
++		supplementary: {
++			idField: 'GeoUID',
++			metricField: 'Metric'
+ 		}
+ 	},
+ 
+ 	// ============================================================================
+-	// METRICS DEFINITIONS
+-	// Define all available metrics - users can switch between them
++	// METRICS DEFINITIONS - 4 categorical metrics (0-5 scale)
+ 	// ============================================================================
+ 	metrics: [
+-		// Metric 1: Population (continuous)
++		// Metric 1: Top Score (default metric, shown first in dropdown)
+ 		{
+-			id: 'population',
+-			column: 'Pop_2021', // Column name in CSV
+-			label: 'Population',
+-			description: '2021 Census Population',
+-			type: 'continuous',
++			id: 'top_score',
++			column: 'Top_Score',
++			label: 'Top Score',
++			description: 'Highest susceptibility score across all metrics',
++			type: 'categorical',
++			scatterYColumn: 'Top_Score_Normalized',
+ 
+-			// Color scale for continuous metrics
+ 			scale: {
+-				colors: [
+-					[0, '#fee5d9'],
+-					[50000, '#fcae91'],
+-					[200000, '#fb6a4a'],
+-					[500000, '#de2d26'],
+-					[3000000, '#a50f15']
+-				],
+-				// Optional: custom legend labels
+-				legendLabels: [
+-					{ min: 500000, label: '> 500K' },
+-					{ min: 200000, max: 500000, label: '200K - 500K' },
+-					{ min: 50000, max: 200000, label: '50K - 200K' },
+-					{ min: 10000, max: 50000, label: '10K - 50K' },
+-					{ max: 10000, label: '< 10K' }
+-				]
++				categories: [0, 1, 2, 3, 4, 5],
++				colors: {
++					0: '#E0E0E0',
++					1: '#B3CDE3',
++					2: '#6497B1',
++					3: '#FDB863',
++					4: '#E08214',
++					5: '#B2182B'
++				},
++				labels: {
++					0: 'No susceptibility',
++					1: 'Least susceptible (below mean)',
++					2: 'Less susceptible (above mean)',
++					3: 'Susceptible (top 10%)',
++					4: 'More susceptible (top 5%)',
++					5: 'Most susceptible (top 2%)'
++				}
+ 			},
+ 
+-			// Format function for displaying values
+-			format: (value) => value?.toLocaleString() || 'N/A',
++			format: (value) => {
++				const labels = {
++					0: 'No susceptibility',
++					1: 'Least susceptible',
++					2: 'Less susceptible',
++					3: 'Susceptible',
++					4: 'More susceptible',
++					5: 'Most susceptible'
++				};
++				return labels[value] || 'N/A';
++			},
+ 
+-			// Tooltip configuration
+ 			tooltip: {
+-				fields: ['Region_Name', 'Pop_2021'],
++				fields: ['CD_Name', 'Top_Score', 'Top_Score_Normalized', 'Top_Metrics'],
+ 				format: {
+-					Pop_2021: (val) => val?.toLocaleString() || 'N/A'
++					Top_Score_Normalized: (val) => (val != null ? val.toFixed(3) : 'N/A')
+ 				}
+ 			}
+ 		},
+ 
+-		// Metric 2: Labour Force (continuous)
++		// Metric 2: Import Susceptibility (IS)
+ 		{
+-			id: 'labour_force',
+-			column: 'Labour_Force_Tot',
+-			label: 'Labour Force',
+-			description: 'Total Labour Force (2021)',
+-			type: 'continuous',
++			id: 'import_susceptibility',
++			column: 'IS',
++			label: 'Import Susceptibility',
++			description: 'Vulnerability to import disruptions',
++			type: 'categorical',
++			scatterYColumn: 'IS_score', // For scatter chart dynamic Y-axis
+ 
+ 			scale: {
+-				colors: [
+-					[0, '#edf8e9'],
+-					[25000, '#bae4b3'],
+-					[100000, '#74c476'],
+-					[250000, '#31a354'],
+-					[1500000, '#006d2c']
+-				]
++				categories: [0, 1, 2, 3, 4, 5],
++				colors: {
++					0: '#E0E0E0', // Gray - No susceptibility
++					1: '#B3CDE3', // Light blue - Least susceptible
++					2: '#6497B1', // Blue - Less susceptible
++					3: '#FDB863', // Yellow - Susceptible
++					4: '#E08214', // Orange - More susceptible
++					5: '#B2182B' // Red - Most susceptible
++				},
++				labels: {
++					0: 'No susceptibility',
++					1: 'Least susceptible (below mean)',
++					2: 'Less susceptible (above mean)',
++					3: 'Susceptible (top 10%)',
++					4: 'More susceptible (top 5%)',
++					5: 'Most susceptible (top 2%)'
++				}
+ 			},
+ 
+-			format: (value) => value?.toLocaleString() || 'N/A',
++			format: (value) => {
++				const labels = {
++					0: 'No susceptibility',
++					1: 'Least susceptible',
++					2: 'Less susceptible',
++					3: 'Susceptible',
++					4: 'More susceptible',
++					5: 'Most susceptible'
++				};
++				return labels[value] || 'N/A';
++			},
+ 
+ 			tooltip: {
+-				fields: ['Region_Name', 'Labour_Force_Tot'],
++				fields: ['CD_Name', 'IS', 'IS_score'],
+ 				format: {
+-					Labour_Force_Tot: (val) => val?.toLocaleString() || 'N/A'
++					IS_score: (val) => (val != null ? val.toFixed(3) : 'N/A')
+ 				}
+ 			}
+ 		},
+ 
+-		// Metric 3: Median Income (continuous)
++		// Metric 3: Manufacturing Susceptibility (MS)
+ 		{
+-			id: 'median_income',
+-			column: 'Median_Hhold_Inc',
+-			label: 'Median Household Income',
+-			description: 'Median Household Income ($)',
+-			type: 'continuous',
++			id: 'manufacturing_susceptibility',
++			column: 'MS',
++			label: 'Manufacturing Susceptibility',
++			description: 'Vulnerability to manufacturing disruptions',
++			type: 'categorical',
++			scatterYColumn: 'MS_score',
+ 
+ 			scale: {
+-				colors: [
+-					[0, '#f7fbff'],
+-					[50000, '#c6dbef'],
+-					[75000, '#6baed6'],
+-					[100000, '#2171b5'],
+-					[150000, '#08306b']
+-				]
++				categories: [0, 1, 2, 3, 4, 5],
++				colors: {
++					0: '#E0E0E0',
++					1: '#B3CDE3',
++					2: '#6497B1',
++					3: '#FDB863',
++					4: '#E08214',
++					5: '#B2182B'
++				},
++				labels: {
++					0: 'No susceptibility',
++					1: 'Least susceptible (below mean)',
++					2: 'Less susceptible (above mean)',
++					3: 'Susceptible (top 10%)',
++					4: 'More susceptible (top 5%)',
++					5: 'Most susceptible (top 2%)'
++				}
+ 			},
+ 
+-			format: (value) => (value ? `$${value.toLocaleString()}` : 'N/A'),
++			format: (value) => {
++				const labels = {
++					0: 'No susceptibility',
++					1: 'Least susceptible',
++					2: 'Less susceptible',
++					3: 'Susceptible',
++					4: 'More susceptible',
++					5: 'Most susceptible'
++				};
++				return labels[value] || 'N/A';
++			},
+ 
+ 			tooltip: {
+-				fields: ['Region_Name', 'Median_Hhold_Inc'],
++				fields: ['CD_Name', 'MS', 'MS_score'],
+ 				format: {
+-					Median_Hhold_Inc: (val) => (val ? `$${val.toLocaleString()}` : 'N/A')
++					MS_score: (val) => (val != null ? val.toFixed(3) : 'N/A')
++				}
++			}
++		},
++
++		// Metric 4: Fossil Fuel Susceptibility (FS)
++		{
++			id: 'fossil_fuel_susceptibility',
++			column: 'FS',
++			label: 'Fossil Fuel Susceptibility',
++			description: 'Vulnerability to fossil fuel sector impacts',
++			type: 'categorical',
++			scatterYColumn: 'FS_score',
++
++			scale: {
++				categories: [0, 1, 2, 3, 4, 5],
++				colors: {
++					0: '#E0E0E0',
++					1: '#B3CDE3',
++					2: '#6497B1',
++					3: '#FDB863',
++					4: '#E08214',
++					5: '#B2182B'
++				},
++				labels: {
++					0: 'No susceptibility',
++					1: 'Least susceptible (below mean)',
++					2: 'Less susceptible (above mean)',
++					3: 'Susceptible (top 10%)',
++					4: 'More susceptible (top 5%)',
++					5: 'Most susceptible (top 2%)'
++				}
++			},
++
++			format: (value) => {
++				const labels = {
++					0: 'No susceptibility',
++					1: 'Least susceptible',
++					2: 'Less susceptible',
++					3: 'Susceptible',
++					4: 'More susceptible',
++					5: 'Most susceptible'
++				};
++				return labels[value] || 'N/A';
++			},
++
++			tooltip: {
++				fields: ['CD_Name', 'FS', 'FS_score'],
++				format: {
++					FS_score: (val) => (val != null ? val.toFixed(3) : 'N/A')
+ 				}
+ 			}
+ 		}
+ 	],
+ 
+-	// Default metric to display on load
+-	defaultMetric: 'population',
++	defaultMetric: 'top_score',
+ 
+ 	// ============================================================================
+ 	// LAYOUT CONFIGURATION
+ 	// ============================================================================
+ 	layout: {
+-		// Row 1 configuration
+ 		row1: {
+-			// Info card placement: 'row1-sidebar' or 'row2'
+-			// 'row1-sidebar' = Info card appears in right sidebar (if it fits visually)
+-			// 'row2' = Info card appears in bottom row with charts
+-			infoCardPlacement: 'row1-sidebar'
++			infoCardPlacement: 'row1-sidebar' // Info card in sidebar
+ 		},
+-
+-		// Row 2 configuration
+ 		row2: {
+-			// enabled: 'auto' | true | false
+-			// 'auto' = show row 2 if any charts/components are enabled
+-			enabled: 'auto',
+-
+-			// Components configuration (maps to chart configs below)
+-			// You can customize width ratios and order here
++			enabled: true, // Explicitly enable Row 2
+ 			components: {
+-				// Bar chart settings (if enabled)
++				// Component 1: NAICS Detail Table (uses DetailPanel2 as infoCard2)
++				infoCard2: {
++					width: 1,
++					order: 0
++				},
++				// Component 2: Stacked Bar Chart
+ 				barChart: {
+-					width: 2, // Ratio units (2 out of 3 total in this example)
+-					order: 1 // Render order
++					width: 1,
++					order: 1
+ 				},
+-				// Scatter chart settings (if enabled)
++				// Component 3: Scatter Chart
+ 				scatterChart: {
+ 					width: 1,
+ 					order: 2
+-				},
+-				// Info card settings (if placement = 'row2')
+-				infoCard: {
+-					width: 1,
+-					align: 'center', // 'start' | 'center' | 'end'
+-					maxWidth: '50%',
+-					order: 0 // Render first
+ 				}
+ 			}
+ 		}
+@@ -203,7 +286,7 @@
+ 		hoverBorderWidth: 2,
+ 		selectedBorderColor: '#FFD700',
+ 		selectedBorderWidth: 3,
+-		highlightedBorderColor: '#FF6B6B', // For linked highlighting from charts
++		highlightedBorderColor: '#FF6B6B',
+ 		highlightedBorderWidth: 2.5
+ 	},
+ 
+@@ -211,7 +294,6 @@
+ 	// MAP VIEWPORT
+ 	// ============================================================================
+ 	viewport: {
+-		// Bounding box [west, south, east, north]
+ 		bounds: [-141, 41.5, -52, 70],
+ 		padding: 20,
+ 		maxZoom: 6,
+@@ -223,14 +305,12 @@
+ 	// UI FEATURES
+ 	// ============================================================================
+ 	features: {
+-		// Metric switcher (dropdown/tabs to change metric)
+ 		metricSwitcher: {
+ 			enabled: true,
+-			position: 'top', // 'top' or 'sidebar'
+-			style: 'dropdown' // 'dropdown' or 'tabs'
++			position: 'top',
++			style: 'dropdown'
+ 		},
+ 
+-		// Province filter dropdown
+ 		provinceFilter: {
+ 			enabled: true,
+ 			label: 'Filter by Province',
+@@ -238,134 +318,135 @@
+ 			allLabel: 'All Canada'
+ 		},
+ 
+-		// Search bar for finding regions
+ 		searchBar: {
+ 			enabled: true,
+-			placeholder: 'Search regions...',
+-			searchFields: ['Region_Name'], // Fields to search in
++			placeholder: 'Search census divisions...',
++			searchFields: ['CD_Name'],
+ 			fuzzyMatch: true,
+ 			maxResults: 10
+ 		},
+ 
+-		// Info card (detail panel)
+ 		infoCard: {
+ 			enabled: true,
+-			// Placement is configured in layout.row1.infoCardPlacement
+ 			clearButton: true,
+ 			exportButton: false
+ 		},
+ 
+-		// Legend
+ 		legend: {
+ 			enabled: true,
+-			position: 'bottom-right' // 'bottom-right', 'bottom-left', 'sidebar'
++			position: 'bottom-right'
+ 		}
+ 	},
+ 
+ 	// ============================================================================
+ 	// DETAIL PANELS
+-	// Define sidebar panels that show when a region is selected
+ 	// ============================================================================
+ 	detailPanels: [
+-		// Panel 1: Basic Info (always shown)
++		// Panel 1: Simple Display Card (in sidebar)
+ 		{
+ 			id: 'basic_info',
+-			title: 'Selected Region',
+-			type: 'fields', // 'fields' or 'custom'
++			title: 'Region Details',
++			type: 'fields',
+ 			fields: [
+-				{ key: 'Pop_2021', label: 'Population' },
+-				{ key: 'Labour_Force_Tot', label: 'Labour Force' },
+-				{ key: 'Median_Hhold_Inc', label: 'Median Income', prefix: '$' }
++				{ key: 'Province_Name', label: 'Province' },
++				{ key: 'Labour_Force', label: 'Labour Force' },
++				{ key: 'Top_Score', label: 'Top Score' },
++				{ key: 'Top_Metrics', label: 'Top Score Metric(s)' }
+ 			],
+ 			format: (value, field) => {
+ 				if (value == null || value === '') return 'N/A';
+-				const prefix = field.prefix || '';
+-				const suffix = field.suffix || '';
+-				if (typeof value === 'number') {
+-					return `${prefix}${value.toLocaleString()}${suffix}`;
++				if (field.key === 'Labour_Force' && typeof value === 'number') {
++					return value.toLocaleString();
+ 				}
+-				return `${prefix}${value}${suffix}`;
++				return value;
+ 			}
+-		}
++		},
+ 
+-		// Panel 2: Supplementary Info (filter-aware, optional)
+-		// Uncomment and configure when you have supplementary data
+-		// {
+-		//   id: 'supplementary',
+-		//   title: 'Top Industries', // Or 'Breakdown', 'Contributors', etc.
+-		//   type: 'custom',
+-		//   // Filter: only show data matching current filters
+-		//   filterBy: ['metric'], // Show different data based on selected metric
+-		//   // Template for rendering (component will handle this)
+-		//   template: 'list' // 'list', 'table', 'bars'
+-		// }
++		// Panel 2: NAICS Detail Table (for DetailPanel2 in Row 2)
++		{
++			id: 'naics_detail',
++			title: 'Sector Details',
++			type: 'custom',
++			template: 'table'
++			// Filter-aware by selected metric (handled in DetailPanel2)
++		}
+ 	],
+ 
+ 	// ============================================================================
+ 	// CHARTS CONFIGURATION
+ 	// ============================================================================
+ 	charts: {
+-		// Horizontal bar chart (aggregated by province)
++		// Stacked Bar Chart - Share of PT labour force by susceptibility category
+ 		barChart: {
+ 			enabled: true,
+-			title: 'by Province',
+-			position: 'bottom', // 'bottom', 'right', 'modal'
++			title: 'Share of PT Labour Force in High Susceptibility CDs',
++			position: 'row2',
+ 
+ 			// Data configuration
+-			groupBy: 'Province_Name', // Column to group by
+-			aggregateColumn: 'Pop_2021', // Column to aggregate (changes with metric)
+-			aggregateFunction: 'sum', // 'sum', 'mean', 'median', 'count'
++			groupBy: 'Province_Name',
++			aggregateColumn: 'Labour_Force',
++			aggregateFunction: 'share_by_category', // Custom function (to be implemented)
++			filterConfig: {
++				scoreThreshold: 3,
++				categories: [3, 4, 5],
++				asPercentage: true
++			},
+ 
+ 			// Axis configuration
+-			orientation: 'horizontal', // 'horizontal' or 'vertical'
+-			xLabel: 'Population →',
++			orientation: 'horizontal',
++			xLabel: 'Share of PT Labour Force (%) →',
+ 			yLabel: null,
+-			xFormat: '~s', // D3 format string
++			xFormat: '.1%', // Percentage format
+ 
+ 			// Styling
+-			sort: 'descending', // 'ascending', 'descending', or null
+-			barColor: '#4A90E2',
+-			highlightColor: '#FFD700', // Hover color (gold)
+-			selectedColor: '#FF6B6B', // Selection color (red)
+-			dimOpacity: 0.3, // Opacity for non-highlighted bars
++			sort: 'descending',
++			stacked: true, // Enable stacked bars
++			colorBy: 'category', // Color by score category
++			colors: {
++				3: '#FDB863', // Yellow
++				4: '#E08214', // Orange
++				5: '#B2182B' // Red
++			},
++			barColor: '#4A90E2', // Fallback (not used with colorBy)
++			highlightColor: '#FFD700',
++			selectedColor: '#FF6B6B',
++			dimOpacity: 0.3,
+ 			height: 300,
+ 
+ 			// Interactions
+-			clickToFilter: false, // Click bar to filter map to that province
+-			linkedHighlight: true // Hover bar highlights regions on map
++			clickToFilter: false,
++			linkedHighlight: true
+ 		},
+ 
+-		// Scatter plot (one point per region)
++		// Scatter Plot - Labour Force vs Susceptibility Score
+ 		scatterChart: {
+-			enabled: false,
+-			title: 'Population vs Income',
+-			position: 'bottom',
++			enabled: true,
++			title: 'Labour Force vs Susceptibility Score',
++			position: 'row2',
+ 
+-			// Data configuration
+-			xColumn: 'Pop_2021', // Changes with metric or config
+-			yColumn: 'Median_Hhold_Inc',
+-			sizeColumn: null, // Optional: vary point size
+-			colorColumn: null, // Optional: vary point color
++			// Data configuration - yColumn is dynamic via scatterYColumn
++			xColumn: 'Labour_Force',
++			yColumn: 'IS_score', // Default, will be overridden by scatterYColumn
+ 
+ 			// Axis configuration
+-			xLabel: 'Population (2021) →',
+-			yLabel: '↑ Median Household Income ($)',
+-			xScale: 'log', // 'linear' or 'log'
++			xLabel: 'Labour Force (2021) →',
++			yLabel: '↑ Susceptibility Score (0-1)',
++			xScale: 'log',
+ 			yScale: 'linear',
+ 			xFormat: '~s',
+-			yFormat: (d) => `$${d.toLocaleString()}`,
++			yFormat: '.2f',
+ 
+ 			// Styling
+ 			pointColor: '#4A90E2',
+ 			pointRadius: 4,
+-			highlightColor: '#FFD700', // Hover color (gold)
++			highlightColor: '#FFD700',
+ 			highlightRadius: 6,
+-			selectedColor: '#FF6B6B', // Selection color (red)
+-			selectedRadius: 7, // Slightly larger than hover
++			selectedColor: '#FF6B6B',
++			selectedRadius: 7,
+ 			height: 300,
+ 
+ 			// Interactions
+-			linkedHighlight: true, // Hover point highlights region on map
++			linkedHighlight: true,
+ 			showTooltip: true
+ 		}
+ 	}
+@@ -391,35 +472,32 @@
+ };
+ 
+ // ============================================================================
+-// REGION GROUPS (Map-only filtering convenience)
+-// Uses INVERSE filtering - defines northern CDs to exclude
++// REGION GROUPS
+ // ============================================================================
+-
+-// Northern CDs to exclude (inverse filter for Southern regions)
+ export const northernRegions = {
+ 	ontario: [
+-		'3548', // Nipissing
+-		'3549', // Parry Sound
+-		'3551', // Manitoulin
+-		'3552', // Sudbury
+-		'3553', // Greater Sudbury / Grand Sudbury
+-		'3554', // Timiskaming
+-		'3556', // Cochrane
+-		'3557', // Algoma
+-		'3558', // Thunder Bay
+-		'3559', // Rainy River
+-		'3560' // Kenora
++		'3548',
++		'3549',
++		'3551',
++		'3552',
++		'3553',
++		'3554',
++		'3556',
++		'3557',
++		'3558',
++		'3559',
++		'3560'
+ 	],
+ 	quebec: [
+-		'2491', // Le Domaine-du-Roy
+-		'2492', // Maria-Chapdelaine
+-		'2493', // Lac-Saint-Jean-Est
+-		'2494', // Le Saguenay-et-son-Fjord
+-		'2495', // La Haute-Côte-Nord
+-		'2496', // Manicouagan
+-		'2497', // Sept-Rivières--Caniapiscau
+-		'2498', // Minganie--Le Golfe-du-Saint-Laurent
+-		'2499' // Nord-du-Québec
++		'2491',
++		'2492',
++		'2493',
++		'2494',
++		'2495',
++		'2496',
++		'2497',
++		'2498',
++		'2499'
+ 	]
+ };
+ 
+@@ -429,18 +507,17 @@
+ 		label: 'Southern Quebec',
+ 		provinceCode: '24',
+ 		provinceName: 'Quebec',
+-		excludeRegions: northernRegions.quebec // INVERSE: exclude northern CDs
++		excludeRegions: northernRegions.quebec
+ 	},
+ 	'southern-ontario': {
+ 		id: 'southern-ontario',
+ 		label: 'Southern Ontario',
+ 		provinceCode: '35',
+ 		provinceName: 'Ontario',
+-		excludeRegions: northernRegions.ontario // INVERSE: exclude northern CDs
++		excludeRegions: northernRegions.ontario
+ 	}
+ };
+ 
+-// Add region groups to mapConfig
+ mapConfig.regionGroups = {
+ 	enabled: true,
+ 	groups: regionGroups
+@@ -449,20 +526,10 @@
+ // ============================================================================
+ // HELPER FUNCTIONS
+ // ============================================================================
+-
+-/**
+- * Get the currently active metric configuration
+- * @param {string} metricId - The metric ID
+- * @returns {object} The metric configuration object
+- */
+ export function getMetricConfig(metricId) {
+ 	return mapConfig.metrics.find((m) => m.id === metricId) || mapConfig.metrics[0];
+ }
+ 
+-/**
+- * Get all enabled chart configurations
+- * @returns {object} Object with chart type as key and config as value
+- */
+ export function getEnabledCharts() {
+ 	const enabled = {};
+ 	if (mapConfig.charts?.barChart?.enabled) {
+diff -ruN /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/stores/mapStore.js /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/stores/mapStore.js
+--- /c/Users/rchejfec/projects/gis/pb_map_base/src/lib/stores/mapStore.js	2025-12-10 15:32:28.953235000 -0500
++++ /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/lib/stores/mapStore.js	2025-12-11 11:15:46.051161200 -0500
+@@ -113,17 +113,18 @@
+ );
+ 
+ /**
+- * Supplementary data for selected region (filter-aware)
++ * Supplementary data for selected region (NOT filter-aware by metric)
++ * Filtering by metric happens in DetailPanel2 component
+  */
+ export const selectedRegionSupplementary = derived(
+-	[supplementaryData, selectedRegion, selectedMetric],
+-	([$supplementaryData, $selectedRegion, $selectedMetric]) => {
++	[supplementaryData, selectedRegion],
++	([$supplementaryData, $selectedRegion]) => {
+ 		if (!$supplementaryData || !$selectedRegion) return null;
+ 
+-		// Filter supplementary data to match current region and metric
+-		return $supplementaryData.filter(
+-			(d) => d.id === $selectedRegion && (!d.metric_id || d.metric_id === $selectedMetric)
+-		);
++		const idField = mapConfig.fields?.supplementary?.idField || 'GeoUID';
++
++		// Filter supplementary data to match current region only
++		return $supplementaryData.filter((d) => String(d[idField]) === String($selectedRegion));
+ 	}
+ );
+ 
+diff -ruN /c/Users/rchejfec/projects/gis/pb_map_base/src/routes/+layout.svelte /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/routes/+layout.svelte
+--- /c/Users/rchejfec/projects/gis/pb_map_base/src/routes/+layout.svelte	2025-12-10 00:41:36.983516800 -0500
++++ /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/routes/+layout.svelte	2025-12-11 10:46:43.501191400 -0500
+@@ -1,35 +1,14 @@
+ <script>
+ 	/**
+-	 * Root Layout with Navigation
++	 * Root Layout - CTP Susceptibility Map
+ 	 *
+-	 * Provides navigation between different layout test views
++	 * Simple layout for iframe embedding (no navigation)
+ 	 */
+-	import { page } from '$app/stores';
+ 	import '../app.css';
+-
+-	const navItems = [
+-		{ href: '/', label: 'Default (1 Row)' },
+-		{ href: '/two-column', label: '2-Column' },
+-		{ href: '/two-row', label: '2-Row Complex' }
+-	];
+-
+-	$: currentPath = $page.url.pathname;
+ </script>
+ 
+ <div class="app-container">
+-	<nav class="layout-nav">
+-		<div class="nav-content">
+-			<span class="nav-title">Layout Tests:</span>
+-			{#each navItems as item}
+-				<a href={item.href} class="nav-link" class:active={currentPath === item.href}>
+-					{item.label}
+-				</a>
+-			{/each}
+-		</div>
+-	</nav>
+-	<div class="page-content">
+-		<slot />
+-	</div>
++	<slot />
+ </div>
+ 
+ <style>
+@@ -39,72 +18,4 @@
+ 		height: 100vh;
+ 		overflow: hidden;
+ 	}
+-
+-	.layout-nav {
+-		background: #2c3e50;
+-		border-bottom: 2px solid #34495e;
+-		flex-shrink: 0;
+-		z-index: 1000;
+-	}
+-
+-	.nav-content {
+-		display: flex;
+-		align-items: center;
+-		gap: 0.5rem;
+-		padding: 0.75rem 1.5rem;
+-		max-width: 100%;
+-		overflow-x: auto;
+-	}
+-
+-	.nav-title {
+-		color: #ecf0f1;
+-		font-weight: 600;
+-		font-size: 0.875rem;
+-		margin-right: 0.5rem;
+-		white-space: nowrap;
+-	}
+-
+-	.nav-link {
+-		color: #bdc3c7;
+-		text-decoration: none;
+-		padding: 0.5rem 1rem;
+-		border-radius: 4px;
+-		font-size: 0.875rem;
+-		font-weight: 500;
+-		transition: all 0.2s ease;
+-		white-space: nowrap;
+-		border: 1px solid transparent;
+-	}
+-
+-	.nav-link:hover {
+-		background: #34495e;
+-		color: #ecf0f1;
+-	}
+-
+-	.nav-link.active {
+-		background: #3498db;
+-		color: white;
+-		border-color: #2980b9;
+-	}
+-
+-	.page-content {
+-		flex: 1;
+-		overflow: hidden;
+-		min-height: 0;
+-	}
+-
+-	@media (max-width: 768px) {
+-		.nav-content {
+-			padding: 0.5rem 1rem;
+-		}
+-
+-		.nav-title {
+-			font-size: 0.75rem;
+-		}
+-
+-		.nav-link {
+-			padding: 0.4rem 0.75rem;
+-			font-size: 0.75rem;
+-		}
+-	}
+ </style>
+diff -ruN /c/Users/rchejfec/projects/gis/pb_map_base/src/routes/+page.svelte /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/routes/+page.svelte
+--- /c/Users/rchejfec/projects/gis/pb_map_base/src/routes/+page.svelte	2025-12-10 00:43:41.643150100 -0500
++++ /c/Users/rchejfec/projects/gis/deployed_maps/test_basemap_wCTP/src/routes/+page.svelte	2025-12-11 10:41:58.674802100 -0500
+@@ -1,13 +1,13 @@
+ <script>
+ 	/**
+-	 * Test Page 1: Default Layout (1 Row)
++	 * CTP Susceptibility Map
+ 	 *
+-	 * Map + Controls + Info Card in Sidebar (no charts)
++	 * 2-row layout: Map + Sidebar | NAICS Table + Stacked Bar + Scatter
+ 	 */
+ 	import MapPage from '$lib/components/MapPage.svelte';
+-	import { config1Row } from '$lib/config/testConfigs.js';
++	import { mapConfig } from '$lib/mapConfig.js';
+ 
+ 	export let data;
+ </script>
+ 
+-<MapPage {data} config={config1Row} />
++<MapPage {data} config={mapConfig} />

@@ -1,0 +1,31 @@
+.Renviron 
+.env
+.Renv
+
+data/raw/
+data/intermediate/
+
+# Node
+node_modules/
+
+# R
+.Rhistory
+.Rproj.user/
+
+# Observable (legacy)
+src/.observablehq/
+
+# SvelteKit
+build/
+.svelte-kit/
+.output/
+.vercel/
+.netlify/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+# IDE settings
+.vscode/
+.idea/
+.claude/
