@@ -1,50 +1,28 @@
-import { readFileSync } from 'fs';
-import { parse } from 'csv-parse/sync';
-
 /**
- * Server-side data loader
+ * Static data loader
  *
- * Loads and prepares data for the map application
+ * Loads pre-built data for the map application
+ * Data is loaded client-side from static JSON files
  */
 
-export async function load() {
+export async function load({ fetch }) {
 	try {
-		// Load GeoJSON
-		const geoJsonPath = 'static/data/census_divisions.geojson';
-		const geoData = JSON.parse(readFileSync(geoJsonPath, 'utf-8'));
+		// Fetch GeoJSON from static directory
+		const geoResponse = await fetch('/data/census_divisions.geojson');
+		const geoData = await geoResponse.json();
 
-		// Load CSV metrics
-		const csvPath = 'static/data/cd_metrics.csv';
-		const csvContent = readFileSync(csvPath, 'utf-8');
+		// Fetch CSV metrics converted to JSON at build time
+		const metricsResponse = await fetch('/data/cd_metrics.json');
+		const metrics = await metricsResponse.json();
 
-		// Parse CSV with type conversion
-		const metrics = parse(csvContent, {
-			columns: true,
-			skip_empty_lines: true,
-			cast: (value, context) => {
-				// Try to convert to number if possible
-				if (context.header) return value;
-				const num = Number(value);
-				return isNaN(num) ? value : num;
-			}
-		});
-
-		// Load supplementary data (optional - for filter-aware detail panels)
+		// Fetch supplementary data (optional)
 		let supplementary = null;
 		try {
-			const suppPath = 'static/data/cd_supplementary.csv';
-			const suppContent = readFileSync(suppPath, 'utf-8');
-			supplementary = parse(suppContent, {
-				columns: true,
-				skip_empty_lines: true,
-				cast: (value, context) => {
-					if (context.header) return value;
-					const num = Number(value);
-					return isNaN(num) ? value : num;
-				}
-			});
+			const suppResponse = await fetch('/data/cd_supplementary.json');
+			if (suppResponse.ok) {
+				supplementary = await suppResponse.json();
+			}
 		} catch (err) {
-			// Supplementary data is optional - no error if file doesn't exist
 			console.log('No supplementary data file found (optional)');
 		}
 

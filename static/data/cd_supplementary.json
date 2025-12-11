@@ -1,0 +1,12763 @@
+[
+  {
+    "GeoUID": 1001,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 1001,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1001,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2111,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 1001,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 1001,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 1001,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "49.3%"
+  },
+  {
+    "GeoUID": 1001,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "37.0%"
+  },
+  {
+    "GeoUID": 1002,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 1125,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 1002,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "5.0%"
+  },
+  {
+    "GeoUID": 1002,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1002,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 1002,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 1003,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 483,
+    "Share": "9.2%"
+  },
+  {
+    "GeoUID": 1003,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 1125,
+    "Share": "3.7%"
+  },
+  {
+    "GeoUID": 1003,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "4.5%"
+  },
+  {
+    "GeoUID": 1003,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1003,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1004,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 483,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 1004,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 1004,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1004,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1004,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1005,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 1005,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 322,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 1005,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 1005,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1005,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1005,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 1006,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 1006,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 481,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1006,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1006,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 1006,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1007,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "8.1%"
+  },
+  {
+    "GeoUID": 1007,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1007,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1007,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1007,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1008,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "5.6%"
+  },
+  {
+    "GeoUID": 1008,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1008,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 1008,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "3.9%"
+  },
+  {
+    "GeoUID": 1008,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1009,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "5.7%"
+  },
+  {
+    "GeoUID": 1009,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1009,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 1009,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 1009,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1010,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "17.9%"
+  },
+  {
+    "GeoUID": 1010,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 1010,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 481,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 1010,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 1010,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1010,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "98.4%"
+  },
+  {
+    "GeoUID": 1010,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 9111,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 1011,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.8%"
+  },
+  {
+    "GeoUID": 1011,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2122,
+    "Share": "7.1%"
+  },
+  {
+    "GeoUID": 1011,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 481,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 1011,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 1011,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 1101,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "5.9%"
+  },
+  {
+    "GeoUID": 1101,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1101,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1101,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1101,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1102,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 1102,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1102,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 325,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 1102,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 1102,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1102,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 1103,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "8.7%"
+  },
+  {
+    "GeoUID": 1103,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1103,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 1103,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 1103,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1103,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3114,
+    "Share": "99.4%"
+  },
+  {
+    "GeoUID": 1103,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1201,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "12.2%"
+  },
+  {
+    "GeoUID": 1201,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1201,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 336,
+    "Share": "3.8%"
+  },
+  {
+    "GeoUID": 1201,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "3.7%"
+  },
+  {
+    "GeoUID": 1201,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1202,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "5.3%"
+  },
+  {
+    "GeoUID": 1202,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1202,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1202,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 1202,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1203,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "7.5%"
+  },
+  {
+    "GeoUID": 1203,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1203,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1203,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 1203,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1204,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 1204,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 1204,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1204,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1204,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1205,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.2%"
+  },
+  {
+    "GeoUID": 1205,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 1205,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1114,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 1205,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1205,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1206,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 1206,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 326,
+    "Share": "5.5%"
+  },
+  {
+    "GeoUID": 1206,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1206,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 1206,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1206,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3212,
+    "Share": "99.5%"
+  },
+  {
+    "GeoUID": 1206,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3262,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1207,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 1207,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 1207,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 326,
+    "Share": "4.2%"
+  },
+  {
+    "GeoUID": 1207,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1207,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1207,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3262,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 1208,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 1208,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 481,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 1208,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3273,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1208,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 1208,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1208,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "81.3%"
+  },
+  {
+    "GeoUID": 1208,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3222,
+    "Share": "18.7%"
+  },
+  {
+    "GeoUID": 1209,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1209,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1209,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 481,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1209,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 1209,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1209,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "88.3%"
+  },
+  {
+    "GeoUID": 1209,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "6.3%"
+  },
+  {
+    "GeoUID": 1210,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 1210,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 1210,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 326,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 1210,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1210,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1210,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 1211,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "4.7%"
+  },
+  {
+    "GeoUID": 1211,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 1211,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1211,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 1211,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1212,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 1212,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 326,
+    "Share": "3.9%"
+  },
+  {
+    "GeoUID": 1212,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1212,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1212,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1212,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "98.1%"
+  },
+  {
+    "GeoUID": 1212,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3262,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 1213,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "4.9%"
+  },
+  {
+    "GeoUID": 1213,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1213,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1213,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1213,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1214,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1214,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1214,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 237,
+    "Share": "3.2%"
+  },
+  {
+    "GeoUID": 1214,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1214,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1215,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 322,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 1215,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 1215,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1215,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1215,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1216,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "4.6%"
+  },
+  {
+    "GeoUID": 1216,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 322,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 1216,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 1216,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1216,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1216,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 1217,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1217,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 1217,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 1217,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1217,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1217,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "95.0%"
+  },
+  {
+    "GeoUID": 1217,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2121,
+    "Share": "5.0%"
+  },
+  {
+    "GeoUID": 1218,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.2%"
+  },
+  {
+    "GeoUID": 1218,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1218,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1218,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1218,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1301,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3241,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 1301,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": "2211FF",
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 1301,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1301,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 3241,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 1301,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1301,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3241,
+    "Share": "74.1%"
+  },
+  {
+    "GeoUID": 1301,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "18.8%"
+  },
+  {
+    "GeoUID": 1302,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 1125,
+    "Share": "4.8%"
+  },
+  {
+    "GeoUID": 1302,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "9.6%"
+  },
+  {
+    "GeoUID": 1302,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1302,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1302,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1302,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "64.9%"
+  },
+  {
+    "GeoUID": 1302,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3221,
+    "Share": "17.9%"
+  },
+  {
+    "GeoUID": 1303,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 1303,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 1303,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 562,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1303,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1303,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1303,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 9111,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 1304,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "5.9%"
+  },
+  {
+    "GeoUID": 1304,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 1304,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1304,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1304,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1304,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3211,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 1305,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3241,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 1305,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 1305,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 322,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 1305,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 3241,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 1305,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1305,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3274,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 1306,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 1306,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1306,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1114,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1306,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1306,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1307,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 1307,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 1307,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 322,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1307,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1307,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1307,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 1308,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "5.3%"
+  },
+  {
+    "GeoUID": 1308,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1308,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 1308,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1308,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1309,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.2%"
+  },
+  {
+    "GeoUID": 1309,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 1309,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 1309,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1309,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1310,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 1310,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1310,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1310,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1310,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1310,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "56.6%"
+  },
+  {
+    "GeoUID": 1310,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "39.1%"
+  },
+  {
+    "GeoUID": 1311,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "8.1%"
+  },
+  {
+    "GeoUID": 1311,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "10.3%"
+  },
+  {
+    "GeoUID": 1311,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1114,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 1311,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 1311,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1311,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3114,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 1312,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "4.0%"
+  },
+  {
+    "GeoUID": 1312,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "5.2%"
+  },
+  {
+    "GeoUID": 1312,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 1312,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1312,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1313,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.6%"
+  },
+  {
+    "GeoUID": 1313,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "4.8%"
+  },
+  {
+    "GeoUID": 1313,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 1313,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1313,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1313,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "43.1%"
+  },
+  {
+    "GeoUID": 1313,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "35.8%"
+  },
+  {
+    "GeoUID": 1314,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "4.7%"
+  },
+  {
+    "GeoUID": 1314,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 1314,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1114,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 1314,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1314,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 1314,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "99.0%"
+  },
+  {
+    "GeoUID": 1314,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3221,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1315,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "5.6%"
+  },
+  {
+    "GeoUID": 1315,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 1315,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 1315,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1315,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 1315,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2401,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "6.3%"
+  },
+  {
+    "GeoUID": 2401,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 483,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 2401,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": "2211FF",
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 2401,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2401,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 2401,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2402,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "11.0%"
+  },
+  {
+    "GeoUID": 2402,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3273,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 2402,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 562,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2402,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2402,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 2402,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2403,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "4.1%"
+  },
+  {
+    "GeoUID": 2403,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 2403,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 333,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 2403,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2403,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2404,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2404,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 2404,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 113,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 2404,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2404,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2405,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 2405,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3273,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2405,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 2405,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2405,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2405,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2406,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "3.7%"
+  },
+  {
+    "GeoUID": 2406,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 113,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 2406,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 2406,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2406,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2407,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "9.2%"
+  },
+  {
+    "GeoUID": 2407,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 2407,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 113,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 2407,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2407,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 2407,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2408,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 2408,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2408,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2408,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2408,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2409,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2409,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "4.6%"
+  },
+  {
+    "GeoUID": 2409,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "3.3%"
+  },
+  {
+    "GeoUID": 2409,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2409,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2410,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2410,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2410,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2410,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2410,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2410,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2411,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "4.2%"
+  },
+  {
+    "GeoUID": 2411,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2411,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2411,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 2411,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2412,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 2412,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 2412,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 2412,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2412,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2413,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "7.5%"
+  },
+  {
+    "GeoUID": 2413,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 2413,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 2413,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2413,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2413,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2414,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.7%"
+  },
+  {
+    "GeoUID": 2414,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 2414,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2414,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 2414,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2415,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 322,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2415,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2415,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2415,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 2415,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2416,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 2416,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 483,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 2416,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1114,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 2416,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 2416,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2417,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "11.9%"
+  },
+  {
+    "GeoUID": 2417,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 2417,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "4.5%"
+  },
+  {
+    "GeoUID": 2417,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2417,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2418,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "5.3%"
+  },
+  {
+    "GeoUID": 2418,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2418,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 2418,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2418,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2419,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "5.4%"
+  },
+  {
+    "GeoUID": 2419,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 2419,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2419,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2419,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2419,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2420,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2420,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 2420,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 236,
+    "Share": "4.2%"
+  },
+  {
+    "GeoUID": 2420,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 2420,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2121,
+    "Share": 0
+  },
+  {
+    "GeoUID": 2421,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 2421,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2421,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2421,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2421,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2421,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2422,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2422,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2422,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 236,
+    "Share": "3.5%"
+  },
+  {
+    "GeoUID": 2422,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2422,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2422,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "58.8%"
+  },
+  {
+    "GeoUID": 2422,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 9111,
+    "Share": "41.2%"
+  },
+  {
+    "GeoUID": 2423,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2423,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2423,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 485,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2423,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2423,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2423,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "79.0%"
+  },
+  {
+    "GeoUID": 2423,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 6113,
+    "Share": "14.3%"
+  },
+  {
+    "GeoUID": 2425,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 2425,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 2425,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2425,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2425,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2425,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3241,
+    "Share": "97.0%"
+  },
+  {
+    "GeoUID": 2425,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3116,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 2426,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "5.8%"
+  },
+  {
+    "GeoUID": 2426,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 2426,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2426,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2426,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2426,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2427,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.9%"
+  },
+  {
+    "GeoUID": 2427,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "3.9%"
+  },
+  {
+    "GeoUID": 2427,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2427,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 2427,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2427,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3115,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2428,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "6.5%"
+  },
+  {
+    "GeoUID": 2428,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "4.3%"
+  },
+  {
+    "GeoUID": 2428,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 2428,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 2428,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2429,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "6.4%"
+  },
+  {
+    "GeoUID": 2429,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2429,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 332,
+    "Share": "4.9%"
+  },
+  {
+    "GeoUID": 2429,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 2429,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2429,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "70.2%"
+  },
+  {
+    "GeoUID": 2429,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3211,
+    "Share": "29.8%"
+  },
+  {
+    "GeoUID": 2430,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "10.0%"
+  },
+  {
+    "GeoUID": 2430,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": "327X",
+    "Share": "3.3%"
+  },
+  {
+    "GeoUID": 2430,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 2430,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2430,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2430,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3212,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2431,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 2431,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 2431,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 2431,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2431,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2431,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2432,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "6.0%"
+  },
+  {
+    "GeoUID": 2432,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2432,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 2432,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 2432,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2432,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3115,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2433,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.2%"
+  },
+  {
+    "GeoUID": 2433,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 2433,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "3.2%"
+  },
+  {
+    "GeoUID": 2433,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2433,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2433,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3315,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2434,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 2434,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3313,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 2434,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 2434,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2434,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2434,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "58.3%"
+  },
+  {
+    "GeoUID": 2434,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3313,
+    "Share": "37.6%"
+  },
+  {
+    "GeoUID": 2435,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "4.3%"
+  },
+  {
+    "GeoUID": 2435,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 2435,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2435,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2435,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2436,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2436,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3313,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2436,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2436,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 2436,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2437,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 2437,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3313,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 2437,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2437,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2437,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2437,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "79.3%"
+  },
+  {
+    "GeoUID": 2437,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5629,
+    "Share": "20.7%"
+  },
+  {
+    "GeoUID": 2438,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3313,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 2438,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 2438,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2438,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 2438,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2438,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3313,
+    "Share": "66.2%"
+  },
+  {
+    "GeoUID": 2438,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "13.4%"
+  },
+  {
+    "GeoUID": 2439,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.2%"
+  },
+  {
+    "GeoUID": 2439,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 322,
+    "Share": "3.3%"
+  },
+  {
+    "GeoUID": 2439,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 2439,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2439,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2439,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "50.3%"
+  },
+  {
+    "GeoUID": 2439,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3221,
+    "Share": "31.1%"
+  },
+  {
+    "GeoUID": 2440,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 2440,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 322,
+    "Share": "5.1%"
+  },
+  {
+    "GeoUID": 2440,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 2440,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 2440,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2441,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "3.3%"
+  },
+  {
+    "GeoUID": 2441,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 322,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 2441,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 2441,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2441,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2441,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3274,
+    "Share": "85.2%"
+  },
+  {
+    "GeoUID": 2441,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3221,
+    "Share": "14.8%"
+  },
+  {
+    "GeoUID": 2442,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 322,
+    "Share": "4.2%"
+  },
+  {
+    "GeoUID": 2442,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 2442,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 336,
+    "Share": "6.6%"
+  },
+  {
+    "GeoUID": 2442,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "6.4%"
+  },
+  {
+    "GeoUID": 2442,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2442,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "86.3%"
+  },
+  {
+    "GeoUID": 2442,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3279,
+    "Share": "13.7%"
+  },
+  {
+    "GeoUID": 2443,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2443,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2443,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 322,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2443,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 2443,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2443,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "36.4%"
+  },
+  {
+    "GeoUID": 2443,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3221,
+    "Share": "35.4%"
+  },
+  {
+    "GeoUID": 2444,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2444,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.7%"
+  },
+  {
+    "GeoUID": 2444,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 2444,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2444,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2444,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 4861,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2445,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2445,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 2445,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2445,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 2445,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2445,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2446,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 2446,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2446,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 325,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 2446,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 2446,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 2446,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3274,
+    "Share": "88.3%"
+  },
+  {
+    "GeoUID": 2446,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3344,
+    "Share": "6.6%"
+  },
+  {
+    "GeoUID": 2447,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.7%"
+  },
+  {
+    "GeoUID": 2447,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2447,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 332,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 2447,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2447,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2447,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3115,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2447,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2448,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "6.1%"
+  },
+  {
+    "GeoUID": 2448,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.5%"
+  },
+  {
+    "GeoUID": 2448,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 325,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2448,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 2448,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2449,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 2449,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.6%"
+  },
+  {
+    "GeoUID": 2449,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2449,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 2449,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2449,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "81.5%"
+  },
+  {
+    "GeoUID": 2449,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3115,
+    "Share": "9.5%"
+  },
+  {
+    "GeoUID": 2450,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 2450,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.6%"
+  },
+  {
+    "GeoUID": 2450,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2450,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2450,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2450,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2451,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.3%"
+  },
+  {
+    "GeoUID": 2451,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2451,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2451,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2451,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2451,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5629,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2452,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 2452,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 2452,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 562,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2452,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2452,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2452,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3116,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2453,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "7.2%"
+  },
+  {
+    "GeoUID": 2453,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 2453,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 2453,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2453,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2453,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "94.5%"
+  },
+  {
+    "GeoUID": 2453,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3321,
+    "Share": "4.4%"
+  },
+  {
+    "GeoUID": 2454,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "7.4%"
+  },
+  {
+    "GeoUID": 2454,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 2454,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2454,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2454,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2454,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3115,
+    "Share": "51.7%"
+  },
+  {
+    "GeoUID": 2454,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3116,
+    "Share": "48.3%"
+  },
+  {
+    "GeoUID": 2455,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "5.9%"
+  },
+  {
+    "GeoUID": 2455,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2455,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 332,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 2455,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 2455,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2455,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3312,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2456,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2456,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 2456,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "5.8%"
+  },
+  {
+    "GeoUID": 2456,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 2456,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2456,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "69.5%"
+  },
+  {
+    "GeoUID": 2456,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3261,
+    "Share": "30.5%"
+  },
+  {
+    "GeoUID": 2457,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 2457,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 2457,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2457,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2457,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2458,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 2458,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 2458,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2458,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 2458,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2458,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "66.7%"
+  },
+  {
+    "GeoUID": 2458,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3364,
+    "Share": "24.2%"
+  },
+  {
+    "GeoUID": 2459,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2459,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 2459,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 2459,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2459,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 2459,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "71.1%"
+  },
+  {
+    "GeoUID": 2459,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3251,
+    "Share": "15.3%"
+  },
+  {
+    "GeoUID": 2460,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2460,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2460,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2460,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2460,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2461,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2461,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2461,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 322,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 2461,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2461,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2461,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "72.5%"
+  },
+  {
+    "GeoUID": 2461,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3221,
+    "Share": "12.2%"
+  },
+  {
+    "GeoUID": 2462,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2462,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2462,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 2462,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2462,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2463,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 2463,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 2463,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "10.0%"
+  },
+  {
+    "GeoUID": 2463,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 2463,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2464,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 2464,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 2464,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "6.8%"
+  },
+  {
+    "GeoUID": 2464,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 2464,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2464,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5629,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2465,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 2465,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2465,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 485,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2465,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 2465,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2465,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3255,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2466,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2466,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2466,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 481,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2466,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2466,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2466,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3241,
+    "Share": "52.2%"
+  },
+  {
+    "GeoUID": 2466,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3251,
+    "Share": "18.2%"
+  },
+  {
+    "GeoUID": 2467,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 2467,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 2467,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2467,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 2467,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2467,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "84.3%"
+  },
+  {
+    "GeoUID": 2467,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3315,
+    "Share": "5.3%"
+  },
+  {
+    "GeoUID": 2468,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "4.4%"
+  },
+  {
+    "GeoUID": 2468,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2468,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3273,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2468,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 2468,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2469,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "4.3%"
+  },
+  {
+    "GeoUID": 2469,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 2469,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2469,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2469,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2470,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 2470,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2470,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 2470,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 2470,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2470,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3261,
+    "Share": "49.1%"
+  },
+  {
+    "GeoUID": 2470,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3251,
+    "Share": "13.6%"
+  },
+  {
+    "GeoUID": 2471,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 2471,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2471,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 481,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 2471,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2471,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 2471,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 4862,
+    "Share": "60.7%"
+  },
+  {
+    "GeoUID": 2471,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3399,
+    "Share": "15.8%"
+  },
+  {
+    "GeoUID": 2472,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 2472,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2472,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 336,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 2472,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 2472,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2472,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2473,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2473,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 2473,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2473,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2473,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2474,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 2474,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 2474,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 336,
+    "Share": "3.8%"
+  },
+  {
+    "GeoUID": 2474,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "3.7%"
+  },
+  {
+    "GeoUID": 2474,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2474,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3364,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2475,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 2475,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2475,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 336,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 2475,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 2475,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2475,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "91.7%"
+  },
+  {
+    "GeoUID": 2475,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3221,
+    "Share": "8.3%"
+  },
+  {
+    "GeoUID": 2476,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2476,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 2476,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 2476,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 2476,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2476,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2477,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 481,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2477,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2477,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2477,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 2477,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2478,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 2478,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 236,
+    "Share": "4.6%"
+  },
+  {
+    "GeoUID": 2478,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "5.9%"
+  },
+  {
+    "GeoUID": 2478,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2478,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2479,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "3.7%"
+  },
+  {
+    "GeoUID": 2479,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 2479,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 2479,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2479,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2480,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2480,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 2480,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 2480,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2480,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2480,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2481,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2481,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 236,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 2481,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "4.0%"
+  },
+  {
+    "GeoUID": 2481,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2481,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2481,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2482,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 236,
+    "Share": "5.6%"
+  },
+  {
+    "GeoUID": 2482,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 238,
+    "Share": "7.4%"
+  },
+  {
+    "GeoUID": 2482,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2482,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2482,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2483,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "4.7%"
+  },
+  {
+    "GeoUID": 2483,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 2483,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 113,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 2483,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2483,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2484,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 2484,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2484,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "7.8%"
+  },
+  {
+    "GeoUID": 2484,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2484,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2485,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 322,
+    "Share": "6.1%"
+  },
+  {
+    "GeoUID": 2485,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "4.0%"
+  },
+  {
+    "GeoUID": 2485,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 2485,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 2485,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 2485,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2486,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 2486,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2122,
+    "Share": "7.5%"
+  },
+  {
+    "GeoUID": 2486,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 2486,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "3.8%"
+  },
+  {
+    "GeoUID": 2486,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2486,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3314,
+    "Share": "75.6%"
+  },
+  {
+    "GeoUID": 2486,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2122,
+    "Share": "24.4%"
+  },
+  {
+    "GeoUID": 2487,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "4.2%"
+  },
+  {
+    "GeoUID": 2487,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 2487,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2122,
+    "Share": "9.6%"
+  },
+  {
+    "GeoUID": 2487,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "4.4%"
+  },
+  {
+    "GeoUID": 2487,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2488,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "4.7%"
+  },
+  {
+    "GeoUID": 2488,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2488,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 113,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 2488,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "3.3%"
+  },
+  {
+    "GeoUID": 2488,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2488,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2489,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "10.3%"
+  },
+  {
+    "GeoUID": 2489,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 2489,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 2489,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "4.7%"
+  },
+  {
+    "GeoUID": 2489,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2489,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "97.4%"
+  },
+  {
+    "GeoUID": 2489,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 2490,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 322,
+    "Share": "6.8%"
+  },
+  {
+    "GeoUID": 2490,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "6.7%"
+  },
+  {
+    "GeoUID": 2490,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 113,
+    "Share": "4.1%"
+  },
+  {
+    "GeoUID": 2490,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 2490,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2121,
+    "Share": 0
+  },
+  {
+    "GeoUID": 2490,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "95.4%"
+  },
+  {
+    "GeoUID": 2490,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "4.6%"
+  },
+  {
+    "GeoUID": 2491,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "5.2%"
+  },
+  {
+    "GeoUID": 2491,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 2491,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 113,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 2491,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2491,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2491,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2492,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 113,
+    "Share": "6.3%"
+  },
+  {
+    "GeoUID": 2492,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "5.1%"
+  },
+  {
+    "GeoUID": 2492,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 2492,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2492,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2492,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 2493,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3313,
+    "Share": "3.2%"
+  },
+  {
+    "GeoUID": 2493,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 2493,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 2493,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2493,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2493,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3313,
+    "Share": "93.1%"
+  },
+  {
+    "GeoUID": 2493,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3221,
+    "Share": "6.3%"
+  },
+  {
+    "GeoUID": 2494,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3313,
+    "Share": "3.7%"
+  },
+  {
+    "GeoUID": 2494,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2494,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 2494,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2494,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2494,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3313,
+    "Share": "88.5%"
+  },
+  {
+    "GeoUID": 2494,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "5.1%"
+  },
+  {
+    "GeoUID": 2495,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "5.2%"
+  },
+  {
+    "GeoUID": 2495,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 483,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 2495,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 2495,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2495,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 2496,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3313,
+    "Share": "6.2%"
+  },
+  {
+    "GeoUID": 2496,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 2496,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2496,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2496,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 2496,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3313,
+    "Share": "97.0%"
+  },
+  {
+    "GeoUID": 2496,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 2497,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3313,
+    "Share": "5.3%"
+  },
+  {
+    "GeoUID": 2497,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 2497,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2122,
+    "Share": "10.5%"
+  },
+  {
+    "GeoUID": 2497,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2497,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2497,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "50.5%"
+  },
+  {
+    "GeoUID": 2497,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3313,
+    "Share": "48.9%"
+  },
+  {
+    "GeoUID": 2498,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "4.0%"
+  },
+  {
+    "GeoUID": 2498,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2498,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2498,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2498,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 2498,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "69.5%"
+  },
+  {
+    "GeoUID": 2498,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "30.5%"
+  },
+  {
+    "GeoUID": 2499,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2499,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "4.0%"
+  },
+  {
+    "GeoUID": 2499,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 481,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2499,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 2499,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 2499,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "55.1%"
+  },
+  {
+    "GeoUID": 2499,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3221,
+    "Share": "26.0%"
+  },
+  {
+    "GeoUID": 3501,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 3501,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 3501,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3501,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3501,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3501,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "73.7%"
+  },
+  {
+    "GeoUID": 3501,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3115,
+    "Share": "20.7%"
+  },
+  {
+    "GeoUID": 3502,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3502,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 3502,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3502,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3502,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3502,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "88.4%"
+  },
+  {
+    "GeoUID": 3502,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "11.6%"
+  },
+  {
+    "GeoUID": 3506,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 485,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3506,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 238,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 3506,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 236,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 3506,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3506,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3506,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 9119,
+    "Share": "29.8%"
+  },
+  {
+    "GeoUID": 3506,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "29.1%"
+  },
+  {
+    "GeoUID": 3507,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 3507,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 3507,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3507,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 3507,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3507,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3251,
+    "Share": "54.5%"
+  },
+  {
+    "GeoUID": 3507,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3112,
+    "Share": "27.0%"
+  },
+  {
+    "GeoUID": 3509,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 238,
+    "Share": "7.5%"
+  },
+  {
+    "GeoUID": 3509,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3509,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3509,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3509,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3509,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3222,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 3510,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3510,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3510,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3510,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3510,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3510,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3252,
+    "Share": "56.2%"
+  },
+  {
+    "GeoUID": 3510,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 6113,
+    "Share": "25.6%"
+  },
+  {
+    "GeoUID": 3511,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 3511,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3511,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3511,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3511,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3511,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "56.2%"
+  },
+  {
+    "GeoUID": 3511,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "38.5%"
+  },
+  {
+    "GeoUID": 3512,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 3512,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 3512,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 322,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 3512,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 3512,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3512,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "47.3%"
+  },
+  {
+    "GeoUID": 3512,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2123,
+    "Share": "21.4%"
+  },
+  {
+    "GeoUID": 3513,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 3513,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3513,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1114,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 3513,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 3513,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3513,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 3514,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 3514,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3514,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 325,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 3514,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 3514,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 3514,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3251,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 3515,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3515,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3515,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3515,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3515,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3515,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3251,
+    "Share": "67.2%"
+  },
+  {
+    "GeoUID": 3515,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2123,
+    "Share": "32.8%"
+  },
+  {
+    "GeoUID": 3516,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3516,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 3516,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 3516,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3516,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3518,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 3518,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3518,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3518,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 3518,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3518,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "75.2%"
+  },
+  {
+    "GeoUID": 3518,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "8.0%"
+  },
+  {
+    "GeoUID": 3519,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3519,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3519,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3519,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 3519,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3519,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "90.4%"
+  },
+  {
+    "GeoUID": 3519,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "5.6%"
+  },
+  {
+    "GeoUID": 3520,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 3520,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3520,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3520,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3520,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3520,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "24.5%"
+  },
+  {
+    "GeoUID": 3520,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2212,
+    "Share": "18.4%"
+  },
+  {
+    "GeoUID": 3521,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "4.2%"
+  },
+  {
+    "GeoUID": 3521,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 3521,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3521,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 3521,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3521,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "36.9%"
+  },
+  {
+    "GeoUID": 3521,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "18.1%"
+  },
+  {
+    "GeoUID": 3522,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 3522,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 3522,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 336,
+    "Share": "3.5%"
+  },
+  {
+    "GeoUID": 3522,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 3522,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3523,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 3523,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "6.3%"
+  },
+  {
+    "GeoUID": 3523,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 3523,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "6.1%"
+  },
+  {
+    "GeoUID": 3523,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3523,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "37.8%"
+  },
+  {
+    "GeoUID": 3523,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3363,
+    "Share": "32.2%"
+  },
+  {
+    "GeoUID": 3524,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 3524,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 3524,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3524,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 3524,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3524,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "68.9%"
+  },
+  {
+    "GeoUID": 3524,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "8.2%"
+  },
+  {
+    "GeoUID": 3525,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 3525,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 3525,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 3525,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 3525,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3525,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "79.5%"
+  },
+  {
+    "GeoUID": 3525,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3274,
+    "Share": "7.9%"
+  },
+  {
+    "GeoUID": 3526,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3526,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 1114,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 3526,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 3526,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 3526,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3526,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "37.6%"
+  },
+  {
+    "GeoUID": 3526,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "21.8%"
+  },
+  {
+    "GeoUID": 3528,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 3528,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 3528,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 3528,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "3.8%"
+  },
+  {
+    "GeoUID": 3528,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3528,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "75.2%"
+  },
+  {
+    "GeoUID": 3528,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "22.0%"
+  },
+  {
+    "GeoUID": 3529,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 3529,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3529,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 3529,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 3529,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 3529,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "52.3%"
+  },
+  {
+    "GeoUID": 3529,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3113,
+    "Share": "11.7%"
+  },
+  {
+    "GeoUID": 3530,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 3530,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 3530,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 336,
+    "Share": "4.4%"
+  },
+  {
+    "GeoUID": 3530,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "4.3%"
+  },
+  {
+    "GeoUID": 3530,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3530,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3361,
+    "Share": "28.1%"
+  },
+  {
+    "GeoUID": 3530,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "21.4%"
+  },
+  {
+    "GeoUID": 3531,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 3531,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "6.7%"
+  },
+  {
+    "GeoUID": 3531,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 3531,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "6.1%"
+  },
+  {
+    "GeoUID": 3531,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3531,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "91.8%"
+  },
+  {
+    "GeoUID": 3531,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3363,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 3532,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 3532,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.7%"
+  },
+  {
+    "GeoUID": 3532,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 336,
+    "Share": "9.8%"
+  },
+  {
+    "GeoUID": 3532,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "9.2%"
+  },
+  {
+    "GeoUID": 3532,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3532,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3274,
+    "Share": "47.0%"
+  },
+  {
+    "GeoUID": 3532,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3273,
+    "Share": "46.8%"
+  },
+  {
+    "GeoUID": 3534,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 3534,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "7.7%"
+  },
+  {
+    "GeoUID": 3534,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 3534,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "7.3%"
+  },
+  {
+    "GeoUID": 3534,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3534,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3251,
+    "Share": "43.9%"
+  },
+  {
+    "GeoUID": 3534,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "42.2%"
+  },
+  {
+    "GeoUID": 3536,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 3536,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 1114,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 3536,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 3536,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 3536,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3536,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "62.7%"
+  },
+  {
+    "GeoUID": 3536,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3251,
+    "Share": "18.3%"
+  },
+  {
+    "GeoUID": 3537,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "8.2%"
+  },
+  {
+    "GeoUID": 3537,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 3537,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1114,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 3537,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "8.1%"
+  },
+  {
+    "GeoUID": 3537,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3537,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 1114,
+    "Share": "43.2%"
+  },
+  {
+    "GeoUID": 3537,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "26.7%"
+  },
+  {
+    "GeoUID": 3538,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3241,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 3538,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "3.2%"
+  },
+  {
+    "GeoUID": 3538,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 3538,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 3538,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 3538,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "31.9%"
+  },
+  {
+    "GeoUID": 3538,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "29.7%"
+  },
+  {
+    "GeoUID": 3539,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 3539,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 3539,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3539,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 3539,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3539,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3112,
+    "Share": "22.0%"
+  },
+  {
+    "GeoUID": 3539,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3315,
+    "Share": "19.2%"
+  },
+  {
+    "GeoUID": 3540,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 3540,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3540,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 3540,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 3540,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3540,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2123,
+    "Share": "64.5%"
+  },
+  {
+    "GeoUID": 3540,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 1114,
+    "Share": "35.5%"
+  },
+  {
+    "GeoUID": 3541,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 3541,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3541,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3541,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3541,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3541,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3251,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 3542,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 3542,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 3542,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": "2211FF",
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3542,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 3542,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3543,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 3543,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "3.6%"
+  },
+  {
+    "GeoUID": 3543,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "6.7%"
+  },
+  {
+    "GeoUID": 3543,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "3.5%"
+  },
+  {
+    "GeoUID": 3543,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3543,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3361,
+    "Share": "63.0%"
+  },
+  {
+    "GeoUID": 3543,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 9111,
+    "Share": "21.6%"
+  },
+  {
+    "GeoUID": 3544,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 236,
+    "Share": "6.4%"
+  },
+  {
+    "GeoUID": 3544,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3544,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "8.5%"
+  },
+  {
+    "GeoUID": 3544,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3544,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3544,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3212,
+    "Share": "51.5%"
+  },
+  {
+    "GeoUID": 3544,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3221,
+    "Share": "48.5%"
+  },
+  {
+    "GeoUID": 3546,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 238,
+    "Share": "9.5%"
+  },
+  {
+    "GeoUID": 3546,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 236,
+    "Share": "6.2%"
+  },
+  {
+    "GeoUID": 3546,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 3546,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3546,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 3547,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 562,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3547,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 3547,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "5.2%"
+  },
+  {
+    "GeoUID": 3547,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 3547,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3547,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3212,
+    "Share": "24.0%"
+  },
+  {
+    "GeoUID": 3547,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "20.0%"
+  },
+  {
+    "GeoUID": 3548,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 3548,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3548,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 481,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3548,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 3548,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3548,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 6221,
+    "Share": "99.7%"
+  },
+  {
+    "GeoUID": 3548,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3549,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 3549,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 236,
+    "Share": "5.2%"
+  },
+  {
+    "GeoUID": 3549,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "7.2%"
+  },
+  {
+    "GeoUID": 3549,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 3549,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3551,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "4.9%"
+  },
+  {
+    "GeoUID": 3551,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3551,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3551,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3551,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3552,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 322,
+    "Share": "4.2%"
+  },
+  {
+    "GeoUID": 3552,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 3552,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 3552,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 3552,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3552,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "88.7%"
+  },
+  {
+    "GeoUID": 3552,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2122,
+    "Share": "7.1%"
+  },
+  {
+    "GeoUID": 3553,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3553,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2122,
+    "Share": "6.5%"
+  },
+  {
+    "GeoUID": 3553,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 3553,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 3553,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3553,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3314,
+    "Share": "94.0%"
+  },
+  {
+    "GeoUID": 3553,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2122,
+    "Share": "6.0%"
+  },
+  {
+    "GeoUID": 3554,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "10.8%"
+  },
+  {
+    "GeoUID": 3554,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 3554,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 3554,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 3554,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3554,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "67.8%"
+  },
+  {
+    "GeoUID": 3554,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2122,
+    "Share": "22.9%"
+  },
+  {
+    "GeoUID": 3556,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "9.2%"
+  },
+  {
+    "GeoUID": 3556,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 3556,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 3556,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 3556,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3556,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "83.2%"
+  },
+  {
+    "GeoUID": 3556,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "5.9%"
+  },
+  {
+    "GeoUID": 3557,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "5.1%"
+  },
+  {
+    "GeoUID": 3557,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 3557,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3557,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3557,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3557,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "92.9%"
+  },
+  {
+    "GeoUID": 3557,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3274,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 3558,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 481,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3558,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3558,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 322,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 3558,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3558,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3558,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "73.7%"
+  },
+  {
+    "GeoUID": 3558,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2122,
+    "Share": "14.7%"
+  },
+  {
+    "GeoUID": 3559,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3559,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 113,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 3559,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 3559,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3559,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3559,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "83.2%"
+  },
+  {
+    "GeoUID": 3559,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "16.8%"
+  },
+  {
+    "GeoUID": 3560,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3560,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 3560,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 481,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3560,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3560,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 3560,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 4862,
+    "Share": "84.1%"
+  },
+  {
+    "GeoUID": 3560,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3221,
+    "Share": "9.4%"
+  },
+  {
+    "GeoUID": 4601,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 4601,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4601,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 4601,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4601,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4602,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 4602,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "4.7%"
+  },
+  {
+    "GeoUID": 4602,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "9.9%"
+  },
+  {
+    "GeoUID": 4602,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4602,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4602,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3112,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4603,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "4.7%"
+  },
+  {
+    "GeoUID": 4603,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 4603,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4603,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 4603,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4603,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3112,
+    "Share": "67.7%"
+  },
+  {
+    "GeoUID": 4603,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "32.3%"
+  },
+  {
+    "GeoUID": 4604,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "3.9%"
+  },
+  {
+    "GeoUID": 4604,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 4604,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4604,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 4604,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4605,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 4605,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 4605,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4605,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 4605,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4605,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4606,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "5.1%"
+  },
+  {
+    "GeoUID": 4606,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 4606,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4606,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "4.2%"
+  },
+  {
+    "GeoUID": 4606,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 4606,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4607,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "6.9%"
+  },
+  {
+    "GeoUID": 4607,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 4607,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4607,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4607,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4607,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3253,
+    "Share": "89.9%"
+  },
+  {
+    "GeoUID": 4607,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3119,
+    "Share": "3.6%"
+  },
+  {
+    "GeoUID": 4608,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "5.8%"
+  },
+  {
+    "GeoUID": 4608,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "5.4%"
+  },
+  {
+    "GeoUID": 4608,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4608,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4608,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 4609,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "7.2%"
+  },
+  {
+    "GeoUID": 4609,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.3%"
+  },
+  {
+    "GeoUID": 4609,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4609,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4609,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4609,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3114,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4610,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 4610,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 4610,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "5.9%"
+  },
+  {
+    "GeoUID": 4610,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4610,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4611,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 4611,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 4611,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4611,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 4611,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4611,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "59.3%"
+  },
+  {
+    "GeoUID": 4611,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 4862,
+    "Share": "32.6%"
+  },
+  {
+    "GeoUID": 4612,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 4612,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4612,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4612,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 4612,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4612,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5629,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4613,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4613,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 4613,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": "2211FF",
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 4613,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 4613,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4613,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "58.2%"
+  },
+  {
+    "GeoUID": 4613,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "41.8%"
+  },
+  {
+    "GeoUID": 4614,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "3.8%"
+  },
+  {
+    "GeoUID": 4614,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 562,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4614,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4614,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 4614,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4614,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3119,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4615,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "15.4%"
+  },
+  {
+    "GeoUID": 4615,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 4615,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4615,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4615,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4615,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3251,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4616,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 4616,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3273,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 4616,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4616,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4616,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4616,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3112,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4617,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 4617,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4617,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1114,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4617,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4617,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4618,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 4618,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 237,
+    "Share": "4.5%"
+  },
+  {
+    "GeoUID": 4618,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4618,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4618,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4618,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3274,
+    "Share": "77.2%"
+  },
+  {
+    "GeoUID": 4618,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3121,
+    "Share": "22.8%"
+  },
+  {
+    "GeoUID": 4619,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 4619,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 562,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4619,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4619,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4619,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4620,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "6.2%"
+  },
+  {
+    "GeoUID": 4620,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 113,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 4620,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4620,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4620,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4621,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 322,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 4621,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2122,
+    "Share": "9.5%"
+  },
+  {
+    "GeoUID": 4621,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4621,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4621,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4621,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "62.0%"
+  },
+  {
+    "GeoUID": 4621,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2122,
+    "Share": "38.0%"
+  },
+  {
+    "GeoUID": 4622,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4622,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 481,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 4622,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2122,
+    "Share": "4.6%"
+  },
+  {
+    "GeoUID": 4622,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4622,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 4622,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4623,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": "2211FF",
+    "Share": "11.1%"
+  },
+  {
+    "GeoUID": 4623,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 4623,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 562,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4623,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 4623,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2121,
+    "Share": 0
+  },
+  {
+    "GeoUID": 4701,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "3.6%"
+  },
+  {
+    "GeoUID": 4701,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.6%"
+  },
+  {
+    "GeoUID": 4701,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": "2211FF",
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 4701,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "7.3%"
+  },
+  {
+    "GeoUID": 4701,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 4701,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "91.8%"
+  },
+  {
+    "GeoUID": 4701,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "6.1%"
+  },
+  {
+    "GeoUID": 4702,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "3.5%"
+  },
+  {
+    "GeoUID": 4702,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 4702,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4702,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "4.6%"
+  },
+  {
+    "GeoUID": 4702,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 4702,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4703,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": "2211FF",
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 4703,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 4703,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 4703,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2121,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 4703,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4703,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "99.5%"
+  },
+  {
+    "GeoUID": 4703,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2121,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4704,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 4704,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 4704,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 333,
+    "Share": "4.9%"
+  },
+  {
+    "GeoUID": 4704,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 4704,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 4704,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "91.4%"
+  },
+  {
+    "GeoUID": 4704,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "8.6%"
+  },
+  {
+    "GeoUID": 4705,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2123,
+    "Share": "10.5%"
+  },
+  {
+    "GeoUID": 4705,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4705,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 4705,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 4705,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4705,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2123,
+    "Share": "87.4%"
+  },
+  {
+    "GeoUID": 4705,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "12.6%"
+  },
+  {
+    "GeoUID": 4706,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4706,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 4706,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4706,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4706,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4706,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3241,
+    "Share": "40.1%"
+  },
+  {
+    "GeoUID": 4706,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2123,
+    "Share": "31.2%"
+  },
+  {
+    "GeoUID": 4707,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4707,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 4707,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 4707,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4707,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4707,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "47.9%"
+  },
+  {
+    "GeoUID": 4707,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "36.3%"
+  },
+  {
+    "GeoUID": 4708,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 4708,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 4708,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4708,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 4708,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 4708,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "90.1%"
+  },
+  {
+    "GeoUID": 4708,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "8.2%"
+  },
+  {
+    "GeoUID": 4709,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "4.4%"
+  },
+  {
+    "GeoUID": 4709,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 4709,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4709,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4709,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4709,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3112,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4710,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "4.0%"
+  },
+  {
+    "GeoUID": 4710,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 4710,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4710,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4710,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4710,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2123,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4711,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 4711,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 4711,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4711,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4711,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4711,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "76.2%"
+  },
+  {
+    "GeoUID": 4711,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2123,
+    "Share": "13.0%"
+  },
+  {
+    "GeoUID": 4712,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 4712,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 4712,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4712,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4712,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4712,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2123,
+    "Share": "81.8%"
+  },
+  {
+    "GeoUID": 4712,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3112,
+    "Share": "18.2%"
+  },
+  {
+    "GeoUID": 4713,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "4.3%"
+  },
+  {
+    "GeoUID": 4713,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.6%"
+  },
+  {
+    "GeoUID": 4713,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2131,
+    "Share": "7.9%"
+  },
+  {
+    "GeoUID": 4713,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "6.1%"
+  },
+  {
+    "GeoUID": 4713,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 4713,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "64.6%"
+  },
+  {
+    "GeoUID": 4713,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "28.4%"
+  },
+  {
+    "GeoUID": 4714,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 4714,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 4714,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 4714,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4714,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4714,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3112,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4715,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4715,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4715,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 4715,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4715,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4715,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "97.2%"
+  },
+  {
+    "GeoUID": 4715,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 4716,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 4716,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4716,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4716,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4716,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4716,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "98.7%"
+  },
+  {
+    "GeoUID": 4716,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 4717,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "4.2%"
+  },
+  {
+    "GeoUID": 4717,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 4717,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 4717,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "4.9%"
+  },
+  {
+    "GeoUID": 4717,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "3.8%"
+  },
+  {
+    "GeoUID": 4717,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "82.6%"
+  },
+  {
+    "GeoUID": 4717,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "15.5%"
+  },
+  {
+    "GeoUID": 4718,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4718,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2122,
+    "Share": "4.5%"
+  },
+  {
+    "GeoUID": 4718,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4718,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 4718,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4718,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 4801,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 4801,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 4801,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1114,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 4801,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 4801,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 4801,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3253,
+    "Share": "43.8%"
+  },
+  {
+    "GeoUID": 4801,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "18.6%"
+  },
+  {
+    "GeoUID": 4802,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "6.7%"
+  },
+  {
+    "GeoUID": 4802,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 4802,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4802,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 4802,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4802,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "36.4%"
+  },
+  {
+    "GeoUID": 4802,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3113,
+    "Share": "16.4%"
+  },
+  {
+    "GeoUID": 4803,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 4803,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 4803,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4803,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4803,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4803,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "94.3%"
+  },
+  {
+    "GeoUID": 4803,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "5.7%"
+  },
+  {
+    "GeoUID": 4804,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "5.1%"
+  },
+  {
+    "GeoUID": 4804,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.5%"
+  },
+  {
+    "GeoUID": 4804,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4804,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "3.5%"
+  },
+  {
+    "GeoUID": 4804,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "3.5%"
+  },
+  {
+    "GeoUID": 4804,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "94.7%"
+  },
+  {
+    "GeoUID": 4804,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "5.1%"
+  },
+  {
+    "GeoUID": 4805,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 4805,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 4805,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 4805,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 4805,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 4805,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "39.5%"
+  },
+  {
+    "GeoUID": 4805,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3253,
+    "Share": "39.1%"
+  },
+  {
+    "GeoUID": 4806,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "3.3%"
+  },
+  {
+    "GeoUID": 4806,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 4806,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4806,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "3.2%"
+  },
+  {
+    "GeoUID": 4806,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 4806,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "53.1%"
+  },
+  {
+    "GeoUID": 4806,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "26.9%"
+  },
+  {
+    "GeoUID": 4807,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "3.2%"
+  },
+  {
+    "GeoUID": 4807,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 4807,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": "2211FF",
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4807,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "4.7%"
+  },
+  {
+    "GeoUID": 4807,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 4807,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "67.9%"
+  },
+  {
+    "GeoUID": 4807,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "23.8%"
+  },
+  {
+    "GeoUID": 4808,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 4808,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 4808,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 4808,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "4.7%"
+  },
+  {
+    "GeoUID": 4808,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 4808,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3251,
+    "Share": "78.6%"
+  },
+  {
+    "GeoUID": 4808,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "15.3%"
+  },
+  {
+    "GeoUID": 4809,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "4.6%"
+  },
+  {
+    "GeoUID": 4809,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4809,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 4809,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "6.8%"
+  },
+  {
+    "GeoUID": 4809,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "4.2%"
+  },
+  {
+    "GeoUID": 4809,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "98.7%"
+  },
+  {
+    "GeoUID": 4809,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4810,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "3.3%"
+  },
+  {
+    "GeoUID": 4810,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 4810,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4810,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "4.1%"
+  },
+  {
+    "GeoUID": 4810,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 4810,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3112,
+    "Share": "28.0%"
+  },
+  {
+    "GeoUID": 4810,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "23.5%"
+  },
+  {
+    "GeoUID": 4811,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 4811,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 4811,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4811,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 4811,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 4811,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "47.9%"
+  },
+  {
+    "GeoUID": 4811,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "15.6%"
+  },
+  {
+    "GeoUID": 4812,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "6.4%"
+  },
+  {
+    "GeoUID": 4812,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.6%"
+  },
+  {
+    "GeoUID": 4812,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2131,
+    "Share": "6.3%"
+  },
+  {
+    "GeoUID": 4812,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "6.0%"
+  },
+  {
+    "GeoUID": 4812,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "6.0%"
+  },
+  {
+    "GeoUID": 4812,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "99.8%"
+  },
+  {
+    "GeoUID": 4812,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3251,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4813,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "3.3%"
+  },
+  {
+    "GeoUID": 4813,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.7%"
+  },
+  {
+    "GeoUID": 4813,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 322,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 4813,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 4813,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 4813,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "73.7%"
+  },
+  {
+    "GeoUID": 4813,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "8.9%"
+  },
+  {
+    "GeoUID": 4814,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "5.5%"
+  },
+  {
+    "GeoUID": 4814,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "5.0%"
+  },
+  {
+    "GeoUID": 4814,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 4814,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "5.3%"
+  },
+  {
+    "GeoUID": 4814,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "4.5%"
+  },
+  {
+    "GeoUID": 4814,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "85.8%"
+  },
+  {
+    "GeoUID": 4814,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3221,
+    "Share": "7.3%"
+  },
+  {
+    "GeoUID": 4815,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4815,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2121,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 4815,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4815,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2121,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 4815,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4815,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "74.3%"
+  },
+  {
+    "GeoUID": 4815,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3279,
+    "Share": "10.6%"
+  },
+  {
+    "GeoUID": 4816,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "23.8%"
+  },
+  {
+    "GeoUID": 4816,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4816,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 4816,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "23.7%"
+  },
+  {
+    "GeoUID": 4816,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "4.7%"
+  },
+  {
+    "GeoUID": 4816,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "95.6%"
+  },
+  {
+    "GeoUID": 4816,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "4.2%"
+  },
+  {
+    "GeoUID": 4817,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "6.8%"
+  },
+  {
+    "GeoUID": 4817,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.5%"
+  },
+  {
+    "GeoUID": 4817,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2111,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 4817,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 4817,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 4817,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "60.1%"
+  },
+  {
+    "GeoUID": 4817,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "23.2%"
+  },
+  {
+    "GeoUID": 4818,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "5.4%"
+  },
+  {
+    "GeoUID": 4818,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "4.7%"
+  },
+  {
+    "GeoUID": 4818,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 4818,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "6.4%"
+  },
+  {
+    "GeoUID": 4818,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "5.0%"
+  },
+  {
+    "GeoUID": 4818,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "85.2%"
+  },
+  {
+    "GeoUID": 4818,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "13.5%"
+  },
+  {
+    "GeoUID": 4819,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "3.3%"
+  },
+  {
+    "GeoUID": 4819,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 4819,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2131,
+    "Share": "7.2%"
+  },
+  {
+    "GeoUID": 4819,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "6.8%"
+  },
+  {
+    "GeoUID": 4819,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 4819,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "71.8%"
+  },
+  {
+    "GeoUID": 4819,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "21.9%"
+  },
+  {
+    "GeoUID": 5901,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2121,
+    "Share": "7.9%"
+  },
+  {
+    "GeoUID": 5901,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 5901,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 5901,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2121,
+    "Share": "7.8%"
+  },
+  {
+    "GeoUID": 5901,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 5901,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2121,
+    "Share": "81.6%"
+  },
+  {
+    "GeoUID": 5901,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 4862,
+    "Share": "15.8%"
+  },
+  {
+    "GeoUID": 5903,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 5903,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 113,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 5903,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 5903,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2121,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5903,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5903,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 5905,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3311,
+    "Share": "6.2%"
+  },
+  {
+    "GeoUID": 5905,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 5905,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 5905,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5905,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2121,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5905,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3314,
+    "Share": "97.1%"
+  },
+  {
+    "GeoUID": 5905,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3211,
+    "Share": "2.9%"
+  },
+  {
+    "GeoUID": 5907,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 5907,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5907,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 5907,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5907,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5907,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "83.1%"
+  },
+  {
+    "GeoUID": 5907,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3211,
+    "Share": "16.9%"
+  },
+  {
+    "GeoUID": 5909,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "3.7%"
+  },
+  {
+    "GeoUID": 5909,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "2.1%"
+  },
+  {
+    "GeoUID": 5909,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 1114,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 5909,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5909,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5909,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 5915,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 311,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 5915,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 5915,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "4.8%"
+  },
+  {
+    "GeoUID": 5915,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5915,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5915,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3273,
+    "Share": "50.4%"
+  },
+  {
+    "GeoUID": 5915,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "17.3%"
+  },
+  {
+    "GeoUID": 5917,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5917,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5917,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5917,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5917,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 325,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5917,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "81.3%"
+  },
+  {
+    "GeoUID": 5917,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 9111,
+    "Share": "18.7%"
+  },
+  {
+    "GeoUID": 5919,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5919,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 113,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 5919,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 322,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 5919,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5919,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5919,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "93.0%"
+  },
+  {
+    "GeoUID": 5919,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3211,
+    "Share": "7.0%"
+  },
+  {
+    "GeoUID": 5921,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 483,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 5921,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5921,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 5921,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5921,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5921,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "76.0%"
+  },
+  {
+    "GeoUID": 5921,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "24.0%"
+  },
+  {
+    "GeoUID": 5923,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5923,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "1.6%"
+  },
+  {
+    "GeoUID": 5923,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 113,
+    "Share": "2.0%"
+  },
+  {
+    "GeoUID": 5923,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5923,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5923,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 5924,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 1125,
+    "Share": "2.4%"
+  },
+  {
+    "GeoUID": 5924,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 113,
+    "Share": "4.0%"
+  },
+  {
+    "GeoUID": 5924,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5924,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5924,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5924,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "79.4%"
+  },
+  {
+    "GeoUID": 5924,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "15.7%"
+  },
+  {
+    "GeoUID": 5926,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5926,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5926,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 113,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 5926,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5926,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5926,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 5927,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 483,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 5927,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 1125,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5927,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 322,
+    "Share": "3.1%"
+  },
+  {
+    "GeoUID": 5927,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5927,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5927,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 5929,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 483,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 5929,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 322,
+    "Share": "2.2%"
+  },
+  {
+    "GeoUID": 5929,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "7.2%"
+  },
+  {
+    "GeoUID": 5929,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5929,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5929,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "81.4%"
+  },
+  {
+    "GeoUID": 5929,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 5622,
+    "Share": "18.6%"
+  },
+  {
+    "GeoUID": 5931,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5931,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 238,
+    "Share": "6.6%"
+  },
+  {
+    "GeoUID": 5931,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 236,
+    "Share": "4.4%"
+  },
+  {
+    "GeoUID": 5931,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5931,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5933,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 5933,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 321,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 5933,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 113,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 5933,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5933,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5933,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "49.7%"
+  },
+  {
+    "GeoUID": 5933,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3221,
+    "Share": "28.0%"
+  },
+  {
+    "GeoUID": 5935,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 238,
+    "Share": "6.7%"
+  },
+  {
+    "GeoUID": 5935,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5935,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5935,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5935,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5937,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "3.0%"
+  },
+  {
+    "GeoUID": 5937,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5937,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 5937,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5937,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5937,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 5622,
+    "Share": "48.8%"
+  },
+  {
+    "GeoUID": 5937,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3219,
+    "Share": "24.4%"
+  },
+  {
+    "GeoUID": 5939,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "3.9%"
+  },
+  {
+    "GeoUID": 5939,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 113,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 5939,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5939,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5939,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5939,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3212,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 5941,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "8.3%"
+  },
+  {
+    "GeoUID": 5941,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 113,
+    "Share": "4.1%"
+  },
+  {
+    "GeoUID": 5941,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 5941,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5941,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5941,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3221,
+    "Share": "49.6%"
+  },
+  {
+    "GeoUID": 5941,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2122,
+    "Share": "24.5%"
+  },
+  {
+    "GeoUID": 5943,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 113,
+    "Share": "9.4%"
+  },
+  {
+    "GeoUID": 5943,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 1125,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 5943,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 483,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 5943,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5943,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5945,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 483,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5945,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 113,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 5945,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5945,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 5945,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2121,
+    "Share": 0
+  },
+  {
+    "GeoUID": 5947,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 483,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 5947,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 5947,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 113,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 5947,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5947,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2121,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5947,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "52.0%"
+  },
+  {
+    "GeoUID": 5947,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "48.0%"
+  },
+  {
+    "GeoUID": 5949,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 3313,
+    "Share": "4.9%"
+  },
+  {
+    "GeoUID": 5949,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 113,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 5949,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 5949,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5949,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5949,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3313,
+    "Share": "81.2%"
+  },
+  {
+    "GeoUID": 5949,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2122,
+    "Share": "18.8%"
+  },
+  {
+    "GeoUID": 5951,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "9.5%"
+  },
+  {
+    "GeoUID": 5951,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 113,
+    "Share": "6.5%"
+  },
+  {
+    "GeoUID": 5951,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.9%"
+  },
+  {
+    "GeoUID": 5951,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 5951,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5951,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "85.2%"
+  },
+  {
+    "GeoUID": 5951,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 3219,
+    "Share": "14.8%"
+  },
+  {
+    "GeoUID": 5953,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 321,
+    "Share": "3.5%"
+  },
+  {
+    "GeoUID": 5953,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 5953,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 322,
+    "Share": "2.3%"
+  },
+  {
+    "GeoUID": 5953,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5953,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 3241,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5953,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 3211,
+    "Share": "39.4%"
+  },
+  {
+    "GeoUID": 5953,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 4862,
+    "Share": "37.6%"
+  },
+  {
+    "GeoUID": 5955,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "4.4%"
+  },
+  {
+    "GeoUID": 5955,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "3.4%"
+  },
+  {
+    "GeoUID": 5955,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 321,
+    "Share": "2.5%"
+  },
+  {
+    "GeoUID": 5955,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "5.3%"
+  },
+  {
+    "GeoUID": 5955,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "4.2%"
+  },
+  {
+    "GeoUID": 5955,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "83.2%"
+  },
+  {
+    "GeoUID": 5955,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "9.2%"
+  },
+  {
+    "GeoUID": 5957,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 484,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 5957,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 237,
+    "Share": "8.5%"
+  },
+  {
+    "GeoUID": 5957,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2122,
+    "Share": "4.2%"
+  },
+  {
+    "GeoUID": 5957,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "2.8%"
+  },
+  {
+    "GeoUID": 5957,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 5959,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "5.6%"
+  },
+  {
+    "GeoUID": 5959,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "4.4%"
+  },
+  {
+    "GeoUID": 5959,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 5959,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "5.5%"
+  },
+  {
+    "GeoUID": 5959,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "1.4%"
+  },
+  {
+    "GeoUID": 5959,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "85.2%"
+  },
+  {
+    "GeoUID": 5959,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "14.8%"
+  },
+  {
+    "GeoUID": 6001,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 481,
+    "Share": "1.2%"
+  },
+  {
+    "GeoUID": 6001,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6001,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6001,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 6001,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6001,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "66.8%"
+  },
+  {
+    "GeoUID": 6001,
+    "Metric": "FS",
+    "Rank": 2,
+    "NAICS": 2211,
+    "Share": "33.2%"
+  },
+  {
+    "GeoUID": 6101,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6101,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 484,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 6101,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 238,
+    "Share": "6.0%"
+  },
+  {
+    "GeoUID": 6101,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6101,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 6101,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2211,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 6102,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 481,
+    "Share": "4.4%"
+  },
+  {
+    "GeoUID": 6102,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6102,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2111,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 6102,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 6102,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6102,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 6103,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6103,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2123,
+    "Share": "7.3%"
+  },
+  {
+    "GeoUID": 6103,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6103,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6103,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2121,
+    "Share": 0
+  },
+  {
+    "GeoUID": 6104,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 481,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 6104,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 562,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6104,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 6104,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6104,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2121,
+    "Share": 0
+  },
+  {
+    "GeoUID": 6105,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": "2211FF",
+    "Share": "2.7%"
+  },
+  {
+    "GeoUID": 6105,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2213,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6105,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 481,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 6105,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6105,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6106,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 481,
+    "Share": "3.6%"
+  },
+  {
+    "GeoUID": 6106,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 2123,
+    "Share": "3.3%"
+  },
+  {
+    "GeoUID": 6106,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 484,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6106,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6106,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6106,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2123,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 6204,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "1.0%"
+  },
+  {
+    "GeoUID": 6204,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 481,
+    "Share": "1.8%"
+  },
+  {
+    "GeoUID": 6204,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": "2211FF",
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6204,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6204,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 336,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6204,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 6205,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "1.1%"
+  },
+  {
+    "GeoUID": 6205,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": "2211FF",
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 6205,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 481,
+    "Share": "1.3%"
+  },
+  {
+    "GeoUID": 6205,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2111,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6205,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6205,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "100.0%"
+  },
+  {
+    "GeoUID": 6208,
+    "Metric": "IS",
+    "Rank": 1,
+    "NAICS": 2213,
+    "Share": "1.7%"
+  },
+  {
+    "GeoUID": 6208,
+    "Metric": "IS",
+    "Rank": 2,
+    "NAICS": 481,
+    "Share": "1.5%"
+  },
+  {
+    "GeoUID": 6208,
+    "Metric": "IS",
+    "Rank": 3,
+    "NAICS": 311,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6208,
+    "Metric": "MS",
+    "Rank": 1,
+    "NAICS": 2131,
+    "Share": "<1%"
+  },
+  {
+    "GeoUID": 6208,
+    "Metric": "MS",
+    "Rank": 2,
+    "NAICS": 2111,
+    "Share": 0
+  },
+  {
+    "GeoUID": 6208,
+    "Metric": "FS",
+    "Rank": 1,
+    "NAICS": 2122,
+    "Share": "100.0%"
+  }
+]

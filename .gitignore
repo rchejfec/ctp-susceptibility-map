@@ -19,8 +19,6 @@ src/.observablehq/
 build/
 .svelte-kit/
 .output/
-.vercel/
-.netlify/
 
 # OS generated files
 .DS_Store
