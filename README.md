@@ -28,7 +28,7 @@ npm run dev
 
 Visit http://localhost:5173
 
-## Documentation
+## Documentation 
 
 - [SETUP_GUIDE.md](./SETUP_GUIDE.md) - How to use this template
 - [docs/CONFIGURATION_GUIDE.md](./docs/CONFIGURATION_GUIDE.md) - Full configuration reference
