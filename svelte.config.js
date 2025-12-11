@@ -9,9 +9,7 @@ const config = {
 		}),
 		prerender: {
 			crawl: true
-		}
+		},
+		paths: {
+			base: '/ctp-susceptibility-map'		}
 	},
-    preprocess: vitePreprocess()
-};
-
-export default config;
