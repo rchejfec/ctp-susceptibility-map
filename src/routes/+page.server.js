@@ -8,6 +8,8 @@
  * The 20MB geojson will be loaded client-side with streaming
  */
 
+export const prerender = true;
+
 export async function load({ fetch }) {
 	try {
 		// Fetch CSV metrics converted to JSON at build time

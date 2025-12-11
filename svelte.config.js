@@ -5,11 +5,12 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
 kit: {
 adapter: adapter({
-fallback: 'index.html',
+fallback: undefined,  // Remove SPA fallback - we're prerendering
 strict: false
 }),
 prerender: {
-crawl: true
+entries: ['/', '/embed', '/two-column'],  // Explicitly prerender these routes
+handleHttpError: 'warn'
 },
 paths: {
 base: '/ctp-susceptibility-map'
