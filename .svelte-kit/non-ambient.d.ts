@@ -39,6 +39,6 @@ declare module "$app/types" {
 		};
 		Pathname(): "/" | "/embed" | "/embed/" | "/two-column" | "/two-column/" | "/two-row" | "/two-row/";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
-		Asset(): "/.nojekyll" | "/data/cd_metrics.csv" | "/data/cd_metrics.json" | "/data/cd_metrics.TEMPLATE_EXAMPLE.csv" | "/data/cd_supplementary.csv" | "/data/cd_supplementary.json" | "/data/census_divisions.geojson" | string & {};
+		Asset(): "/.nojekyll" | "/data/cd_metrics.TEMPLATE_EXAMPLE.csv" | "/data/cd_metrics.csv" | "/data/cd_metrics.json" | "/data/cd_supplementary.csv" | "/data/cd_supplementary.json" | "/data/census_divisions.geojson" | string & {};
 	}
 }

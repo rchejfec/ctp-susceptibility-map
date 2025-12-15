@@ -1,6 +1,6 @@
 <script>
-	import { onMount, afterUpdate } from 'svelte';
-	import * as d3 from 'd3';
+	import { onMount, onDestroy } from 'svelte';
+	import * as echarts from 'echarts';
 	import {
 		filteredMetrics,
 		currentMetricConfig,
@@ -13,7 +13,7 @@
 	import { mapConfig } from '$lib/mapConfig.js';
 
 	/**
-	 * Scatter Plot Component
+	 * Scatter Plot Component (Apache ECharts version)
 	 *
 	 * Shows relationship between two variables
 	 * Supports linked highlighting with map
@@ -21,276 +21,194 @@
 
 	const chartConfig = mapConfig.charts?.scatterChart || {};
 	const height = chartConfig.height || 300;
-	const margin = { top: 20, right: 40, bottom: 60, left: 80 }; // Increased margins to prevent label overlap
 
-	let container;
-	let svg;
-	let tooltip;
+	let chartDiv;
+	let myChart;
+	let resizeObserver;
 
-	$: if (container && $filteredMetrics && $currentMetricConfig) {
-		renderChart($filteredMetrics, $currentMetricConfig);
+	// Reactive statements
+	$: if (myChart && $filteredMetrics && $currentMetricConfig) {
+		updateChart($filteredMetrics, $currentMetricConfig);
 	}
 
-	$: if (svg) {
-		updateHighlight($highlightedRegions, $selectedRegion);
+	$: if (myChart && $highlightedRegions) {
+		handleExternalHighlight($highlightedRegions);
 	}
 
-	function renderChart(data, metricConfig) {
-		if (!container) return;
+	$: if (myChart && $selectedRegion) {
+		// Just treat selection as a highlight for now, or we could add a markPoint
+		handleExternalHighlight([$selectedRegion]);
+	}
 
-		const width = container.clientWidth;
-		const innerWidth = width - margin.left - margin.right;
-		const innerHeight = height - margin.top - margin.bottom;
-
-		// Clear existing
-		d3.select(container).selectAll('*').remove();
-
-		// Create SVG
-		svg = d3
-			.select(container)
-			.append('svg')
-			.attr('width', width)
-			.attr('height', height)
-			.append('g')
-			.attr('transform', `translate(${margin.left},${margin.top})`);
-
-		// Filter data with valid values
+	function updateChart(data, metricConfig) {
 		const xColumn = chartConfig.xColumn;
-		// Use metric-specific scatterYColumn if available (for dynamic Y-axis)
 		const yColumn = metricConfig.scatterYColumn || chartConfig.yColumn;
 		const idField = mapConfig.fields?.metrics?.idField || 'GeoUID';
 		const nameField = mapConfig.fields?.geometry?.nameField || 'Region_Name';
 
-		const plotData = data.filter(
-			(d) => d[xColumn] != null && d[yColumn] != null && !isNaN(d[xColumn]) && !isNaN(d[yColumn])
-		);
+		const plotData = data
+			.filter(
+				(d) => d[xColumn] != null && d[yColumn] != null && !isNaN(d[xColumn]) && !isNaN(d[yColumn])
+			)
+			.map((d) => {
+				return {
+					value: [d[xColumn], d[yColumn]],
+					name: d[nameField],
+					id: d[idField]
+				};
+			});
 
-		if (plotData.length === 0) {
-			svg
-				.append('text')
-				.attr('x', innerWidth / 2)
-				.attr('y', innerHeight / 2)
-				.attr('text-anchor', 'middle')
-				.attr('fill', '#999')
-				.text('No data available');
+		const option = {
+			tooltip: {
+				trigger: 'item',
+				formatter: (params) => {
+					const d = params.data;
+					return `<strong>${d.name}</strong><br/>
+                            ${chartConfig.xLabel}: ${params.value[0]}<br/>
+                            ${chartConfig.yLabel}: ${params.value[1]}`;
+				}
+			},
+			grid: {
+				left: '8%',
+				right: '8%',
+				bottom: '10%',
+				top: '5%'
+			},
+			xAxis: {
+				type: chartConfig.xScale === 'log' ? 'log' : 'value',
+				name: chartConfig.xLabel,
+				nameLocation: 'middle',
+				nameGap: 30,
+				splitLine: {
+					show: false
+				}
+			},
+			yAxis: {
+				type: chartConfig.yScale === 'log' ? 'log' : 'value',
+				name: chartConfig.yLabel,
+				nameLocation: 'middle',
+				nameGap: 40,
+				splitLine: {
+					show: true,
+					lineStyle: {
+						type: 'dashed'
+					}
+				}
+			},
+			series: [
+				{
+					type: 'scatter',
+					data: plotData,
+					symbolSize: chartConfig.pointRadius || 6,
+					itemStyle: {
+						color: chartConfig.pointColor || '#4A90E2',
+						opacity: 0.7
+					},
+					emphasis: {
+						focus: 'self',
+						itemStyle: {
+							color: chartConfig.highlightColor || '#FFD700',
+							borderColor: '#fff',
+							borderWidth: 2,
+							opacity: 1,
+							shadowBlur: 10,
+							shadowColor: 'rgba(0,0,0,0.3)'
+						},
+						scale: true
+					}
+				}
+			]
+		};
+
+		myChart.setOption(option);
+	}
+
+	function handleExternalHighlight(highlightedIds) {
+		if (!highlightedIds || highlightedIds.length === 0) {
+			myChart.dispatchAction({
+				type: 'downplay',
+				seriesIndex: 0
+			});
 			return;
 		}
 
-		// Scales
-		const xScale =
-			chartConfig.xScale === 'log'
-				? d3
-						.scaleLog()
-						.domain([
-							d3.min(plotData, (d) => d[xColumn]) || 1,
-							d3.max(plotData, (d) => d[xColumn]) || 10
-						])
-						.range([0, innerWidth])
-						.nice()
-				: d3
-						.scaleLinear()
-						.domain([0, d3.max(plotData, (d) => d[xColumn])])
-						.range([0, innerWidth])
-						.nice();
+		// ECharts dispatchAction 'highlight' works by dataIndex or name.
+		// We have IDs in the data. We need to find the data indices.
+		// This might be slow for large datasets if we search every time.
+		// Optimization: Store a map of id -> dataIndex?
 
-		const yScale =
-			chartConfig.yScale === 'log'
-				? d3
-						.scaleLog()
-						.domain([
-							d3.min(plotData, (d) => d[yColumn]) || 1,
-							d3.max(plotData, (d) => d[yColumn]) || 10
-						])
-						.range([innerHeight, 0])
-						.nice()
-				: d3
-						.scaleLinear()
-						.domain([0, d3.max(plotData, (d) => d[yColumn])])
-						.range([innerHeight, 0])
-						.nice();
+		const option = myChart.getOption();
+		// option.series[0].data contains the data
+		// But getOption might return the merged option, checking if 'data' is available
+		// It's safer to use the data we passed in updateChart, but that's local scope.
+		// Let's rely on internal model if possible, or just search.
+		// Accessing series data from model:
+		const seriesData = option.series[0].data;
 
-		// Axes
-		const xAxis = d3
-			.axisBottom(xScale)
-			.tickFormat(
-				typeof chartConfig.xFormat === 'function' ? chartConfig.xFormat : d3.format(chartConfig.xFormat || '~s')
-			);
+		const indices = [];
+		seriesData.forEach((d, index) => {
+			if (highlightedIds.includes(String(d.id))) {
+				indices.push(index);
+			}
+		});
 
-		const yAxis = d3
-			.axisLeft(yScale)
-			.tickFormat(
-				typeof chartConfig.yFormat === 'function' ? chartConfig.yFormat : d3.format(chartConfig.yFormat || '~s')
-			);
-
-		svg.append('g').attr('class', 'x-axis').attr('transform', `translate(0,${innerHeight})`).call(xAxis);
-
-		svg.append('g').attr('class', 'y-axis').call(yAxis);
-
-		// Axis labels
-		if (chartConfig.xLabel) {
-			svg
-				.append('text')
-				.attr('class', 'axis-label')
-				.attr('x', innerWidth / 2)
-				.attr('y', innerHeight + 40)
-				.attr('text-anchor', 'middle')
-				.attr('fill', '#666')
-				.attr('font-size', '12px')
-				.text(chartConfig.xLabel);
-		}
-
-		if (chartConfig.yLabel) {
-			svg
-				.append('text')
-				.attr('class', 'axis-label')
-				.attr('transform', 'rotate(-90)')
-				.attr('x', -innerHeight / 2)
-				.attr('y', -45)
-				.attr('text-anchor', 'middle')
-				.attr('fill', '#666')
-				.attr('font-size', '12px')
-				.text(chartConfig.yLabel);
-		}
-
-		// Create tooltip
-		tooltip = d3
-			.select('body')
-			.append('div')
-			.attr('class', 'scatter-tooltip')
-			.style('position', 'absolute')
-			.style('visibility', 'hidden')
-			.style('background', 'rgba(0, 0, 0, 0.8)')
-			.style('color', 'white')
-			.style('padding', '8px 12px')
-			.style('border-radius', '4px')
-			.style('font-size', '12px')
-			.style('pointer-events', 'none')
-			.style('z-index', '10000');
-
-		// Points
-		svg
-			.selectAll('.point')
-			.data(plotData)
-			.enter()
-			.append('circle')
-			.attr('class', 'point')
-			.attr('data-id', (d) => d[idField])
-			.attr('cx', (d) => xScale(d[xColumn]))
-			.attr('cy', (d) => yScale(d[yColumn]))
-			.attr('r', chartConfig.pointRadius || 4)
-			.attr('fill', chartConfig.pointColor || '#4A90E2')
-			.attr('opacity', 0.7)
-			.on('mouseover', function (event, d) {
-				if (chartConfig.linkedHighlight) {
-					highlightRegions([d[idField]]);
-				}
-
-				if (chartConfig.showTooltip && tooltip) {
-					const xFormatter =
-						typeof chartConfig.xFormat === 'function'
-							? chartConfig.xFormat
-							: d3.format(chartConfig.xFormat || '~s');
-					const yFormatter =
-						typeof chartConfig.yFormat === 'function'
-							? chartConfig.yFormat
-							: d3.format(chartConfig.yFormat || '~s');
-
-					tooltip
-						.style('visibility', 'visible')
-						.html(
-							`<strong>${d[nameField]}</strong><br/>` +
-								`${chartConfig.xLabel || xColumn}: ${xFormatter(d[xColumn])}<br/>` +
-								`${chartConfig.yLabel || yColumn}: ${yFormatter(d[yColumn])}`
-						);
-				}
-
-				d3.select(this)
-					.attr('r', chartConfig.highlightRadius || 6)
-					.attr('fill', chartConfig.highlightColor || '#FFD700')
-					.attr('opacity', 1);
-			})
-			.on('mousemove', function (event) {
-				if (tooltip) {
-					tooltip.style('top', event.pageY + 10 + 'px').style('left', event.pageX + 10 + 'px');
-				}
-			})
-			.on('mouseout', function () {
-				clearHighlights();
-
-				if (tooltip) {
-					tooltip.style('visibility', 'hidden');
-				}
-
-				d3.select(this)
-					.attr('r', chartConfig.pointRadius || 4)
-					.attr('fill', chartConfig.pointColor || '#4A90E2')
-					.attr('opacity', 0.7);
-			})
-			.on('click', function (event, d) {
-				toggleRegionSelection(d[idField]);
+		if (indices.length > 0) {
+			myChart.dispatchAction({
+				type: 'highlight',
+				seriesIndex: 0,
+				dataIndex: indices
 			});
-	}
-
-	function updateHighlight(highlightedIds, selectedId) {
-		if (!svg) return;
-
-		const idField = mapConfig.fields?.metrics?.idField || 'GeoUID';
-
-		// Reset all points
-		svg
-			.selectAll('.point')
-			.attr('r', chartConfig.pointRadius || 4)
-			.attr('fill', chartConfig.pointColor || '#4A90E2')
-			.attr('opacity', 0.7);
-
-		// Highlight specific points
-		if (highlightedIds && highlightedIds.length > 0) {
-			svg.selectAll('.point').each(function (d) {
-				if (highlightedIds.includes(d[idField])) {
-					d3.select(this)
-						.attr('r', chartConfig.highlightRadius || 6)
-						.attr('fill', chartConfig.highlightColor || '#FFD700')
-						.attr('opacity', 1);
-				}
+		} else {
+             myChart.dispatchAction({
+				type: 'downplay',
+				seriesIndex: 0
 			});
-		}
-
-		// Selected point (distinct from highlight)
-		if (selectedId) {
-			svg.selectAll('.point').each(function (d) {
-				if (String(d[idField]) === String(selectedId)) {
-					d3.select(this)
-						.attr('r', chartConfig.highlightRadius || 6)
-						.attr('fill', '#FF6B6B')
-						.attr('opacity', 1)
-						.raise();
-				}
-			});
-		}
+        }
 	}
 
 	onMount(() => {
-		if ($filteredMetrics && $currentMetricConfig) {
-			renderChart($filteredMetrics, $currentMetricConfig);
-		}
+		myChart = echarts.init(chartDiv);
 
-		return () => {
-			// Cleanup tooltip on unmount
-			if (tooltip) {
-				tooltip.remove();
+		resizeObserver = new ResizeObserver(() => {
+			myChart.resize();
+		});
+		resizeObserver.observe(chartDiv);
+
+		// Interactions
+		myChart.on('mouseover', (params) => {
+			if (chartConfig.linkedHighlight && params.data.id) {
+				highlightRegions([params.data.id]);
 			}
-		};
+		});
+
+		myChart.on('mouseout', () => {
+			clearHighlights();
+		});
+
+		myChart.on('click', (params) => {
+			if (params.data.id) {
+				toggleRegionSelection(params.data.id);
+			}
+		});
+
+		if ($filteredMetrics && $currentMetricConfig) {
+			updateChart($filteredMetrics, $currentMetricConfig);
+		}
+	});
+
+	onDestroy(() => {
+		if (resizeObserver) resizeObserver.disconnect();
+		if (myChart) myChart.dispose();
 	});
 </script>
 
 <div class="scatter-plot-container">
 	<h3 class="chart-title">{chartConfig.title || 'Scatter Plot'}</h3>
-	<div bind:this={container} class="chart"></div>
+	<div bind:this={chartDiv} class="chart"></div>
 </div>
 
 <style>
 	.scatter-plot-container {
-		/* No background/padding/shadow - parent .sidebar-section provides it */
 		display: flex;
 		flex-direction: column;
 		flex: 1;
@@ -298,7 +216,6 @@
 	}
 
 	.chart-title {
-		/* Title styling standardized in MapPage */
 		margin: 0 0 1rem 0;
 		font-size: 1rem;
 		font-weight: 600;
@@ -308,31 +225,7 @@
 
 	.chart {
 		width: 100%;
-		overflow-x: auto;
+		height: 300px; /* Default */
 		flex: 1;
-	}
-
-	:global(.point) {
-		cursor: pointer;
-		transition: all 0.2s;
-		stroke: white;
-		stroke-width: 1px;
-	}
-
-	:global(.x-axis),
-	:global(.y-axis) {
-		font-size: 11px;
-	}
-
-	:global(.x-axis path),
-	:global(.y-axis path),
-	:global(.x-axis line),
-	:global(.y-axis line) {
-		stroke: #999;
-	}
-
-	:global(.x-axis text),
-	:global(.y-axis text) {
-		fill: #666;
 	}
 </style>
