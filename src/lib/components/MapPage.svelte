@@ -31,6 +31,9 @@
 	/** @type {{geoData: any, metrics: any[]}} - Data from server */
 	export let data;
 
+	/** @type {any} - Optional Map Component override */
+	export let mapComponent = MapView;
+
 	$: if (data?.error) {
 		console.error('Error loading data:', data.error);
 	}
@@ -132,7 +135,7 @@
 		<div class="two-column-grid">
 			<!-- Left: Map -->
 			<div class="map-section">
-				<MapView />
+				<svelte:component this={mapComponent} />
 				{#if legendEnabled}
 					<div class="legend-overlay">
 						<Legend />
@@ -184,7 +187,7 @@
 		<!-- SIDEBAR MODE: Map + Sidebar (Row 1), optional Row 2 below -->
 		<div class="main-grid">
 			<div class="map-section">
-				<MapView />
+				<svelte:component this={mapComponent} />
 				{#if legendEnabled}
 					<div class="legend-overlay">
 						<Legend />

@@ -2,6 +2,9 @@
 	"/": [
 		"src/routes/+page.server.js"
 	],
+	"/echarts-full": [
+		"src/routes/echarts-full/+page.server.js"
+	],
 	"/embed": [
 		"src/routes/embed/+page.server.js"
 	],
